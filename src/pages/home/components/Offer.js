@@ -90,13 +90,13 @@ const OfferSec = () => {
                 </Typography>
               </ContentBox>
               <StyledText style={{ fontSize: "16px" }}>
-                The Xperience Pay WEB3 Marketplace is the cornerstone of our
-                ecosystem, empowering you to seamlessly buy and sell real-world
-                assets (RWAs) using cryptocurrencies. Discover a diverse
-                selection of real-world assets (RWAs) on the XPP WEB3
-                Marketplace. From real estate and luxury goods to precious
-                metals and art, our marketplace caters to a wide range of
-                interests and goals.
+                The Xperience Pay WEB3 Marketplace is the mainstay of our
+                ecosystem, allowing you to buy and sell real-world assets (RWAs)
+                using cryptocurrencies without a hitch. Find all types of
+                real-world assets (RWAs) at the XPP WEB3 Marketplace and enjoy
+                crypto-based purchases. You would be able to find everything
+                from houses and expensive goods to precious metals and works of
+                art in our marketplace that suits various tastes and goals.
               </StyledText>
 
               {/*
@@ -131,13 +131,14 @@ const OfferSec = () => {
                 </Typography>
               </ContentBox>
               <StyledText style={{ fontSize: "16px" }}>
-                Experience stability in a volatile market with XPPUSD. The
-                Xperience Pay Stablecoin (XPPUSD) is the cornerstone of
-                financial stability within the XPP ecosystem. It functions as a
-                bridge between the volatility of the cryptocurrency market and
-                the stability of traditional fiat currencies. XPPUSD maintains a
-                1:1 peg to the US dollar. This price stability fosters trust and
-                confidence among users when conducting transactions.
+                Experience stability in a volatile market with XPPUSD. Xperience
+                Pay Stablecoin (XPPUSD) plays a vital role in the financial
+                stability for all transaction within XPP ecosystem. This coin
+                shields investors from wild swings in cryptocurrencies while
+                insulating them by tying it directly to traditional fiat
+                currencies. It stays pegged at 1:1 to the US dollar so as to
+                maintain price balance. In other words, this price constancy
+                improves trust among users during transactions.
               </StyledText>
               {/*
               <StyledButton
@@ -173,14 +174,14 @@ const OfferSec = () => {
                 </Typography>
               </ContentBox>
               <StyledText style={{ fontSize: "16px" }}>
-                The XPP Wallet serves as your central hub for managing your
-                crypto holdings and interacting with the XPP ecosystem. The
-                intuitive interface of the XPP Wallet makes sending and
-                receiving international payments a breeze. Just select your
-                recipient's XPP Wallet address, enter the desired amount, and
-                your funds are on their way in a matter of minutes. Send and
-                receive payments from anyone with an XPP Wallet, regardless of
-                their location.
+                XPP Wallet makes it easy to control, access, and manage crypto
+                holdings. XPP Wallet has an easy-to-use interface, where you
+                just have to click “send” or “receive” when making overseas
+                money transfers. Just insert your recipient’s address for an XPP
+                wallet and then indicate how much money you want to send and
+                within minutes your funds will reach their desired destination.
+                XPP wallet provides you the facility to make payments from
+                anywhere around the world.
               </StyledText>
               {/*
               <StyledButton
@@ -214,13 +215,12 @@ const OfferSec = () => {
                 </Typography>
               </ContentBox>
               <StyledText style={{ fontSize: "16px" }}>
-                Xperience Pay (XPP) disrupts this outdated system by offering a
-                revolutionary solution for cross-border payments using its
-                stablecoin (XPPUSD) and the XPP Wallet. Our revolutionary
+                Xperience Pay (XPP) disrupts the old system by providing a
+                transformational solution for cross-border payments using its
+                stablecoin (XPPUSD) and XPP Wallet. Our transformational
                 cross-border payment solution leverages the power of blockchain
-                technology, offering unparalleled speed, stability, and
-                affordability. Recipients can access their funds quickly and
-                efficiently.
+                technology, offering unmatched speed, power and affordability.
+                Recipients can access their funds quickly and efficiently.
               </StyledText>
               {/*
               <StyledButton

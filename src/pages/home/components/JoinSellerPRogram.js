@@ -65,8 +65,8 @@ const JoinSellerProgram = () => {
               fontWeight: 300,
             }}
           >
-            Want to sell on our platform? Join the community of our trusted
-            sellers and get access to the new potential buyers around the world.
+            Want to sell on our platform? Join our team of trusted sellers and
+            gain access to new potential customers around the world.
           </StyledParagraph>
         </TextContainer>
         <Button

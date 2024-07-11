@@ -65,8 +65,9 @@ export default function Footer() {
             mt={2}
             sx={{ color: "hsla(0, 0%, 100%, 0.8)" }}
           >
-            Xperience Pay (XPP) empowers you to seamlessly buy, sell, and manage
-            RWAs on our secure, user-friendly WEB3 marketplace.
+            Xperience Pay (XPP) gives you the ability to buy, sell and manage
+            RWAs on our secure, user-friendly WEB3 marketplace, making
+            crypto-based purchases more convenient.
           </Typography>
         </Box>
         <Box

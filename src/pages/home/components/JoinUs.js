@@ -106,7 +106,7 @@ const SubscriptionSection = () => {
               }}
             >
               Experience the future of finance with Xperience Pay (XPP). Join
-              our ecosystem today and unlock a world of possibilities.
+              our ecosystem today and open up a world of possibilities.
             </Typography>
           </Box>
           <Stack direction="row" spacing={1} useFlexGap>

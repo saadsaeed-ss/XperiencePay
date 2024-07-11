@@ -43,15 +43,14 @@ const CardSection = ({ imageWidth = "80%" }) => {
               fontSize: "16px",
             }}
           >
-            Unlock the true potential of your crypto holdings with the XPP
-            Prepaid Borderless Visa Business Card (XBVBC). Seamlessly convert
-            your digital assets into spendable currency for everyday purchases.
-            It empowers you to effortlessly convert your crypto holdings into
-            spendable currency, accepted worldwide at any merchant that displays
-            the Visa logo. Simply link your XPP Wallet to your Xperience Pay
-            Borderless Visa Business Card. When you make a purchase, the card
-            automatically converts the required amount of cryptocurrency from
-            your wallet into traditional fiat currency.
+            With the XPP Prepaid Borderless Visa Business Card (XBVBC), you can
+            discover the full potential of your cryptocurrency holdings. It
+            gives you the ability to effortlessly convert your crypto holdings
+            into a spending currency, accepted globally at any merchant
+            displaying the Visa brand. Just link your XPP wallet to your
+            Xperience Pay Borderless Visa Business Card. When you make a
+            purchase, the card converts the required cryptocurrency from your
+            wallet to a traditional fiat currency.
           </Typography>
           {/*
           <Button

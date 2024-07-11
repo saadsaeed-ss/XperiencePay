@@ -44,25 +44,25 @@ function Services() {
     {
       title: "Security at its Core",
       description:
-        "Enjoy the peace of mind that comes with industry-leading security protocols safeguarding every transaction.",
+        "Feel safe with every transaction, protected by our top-notch security.",
       icon: securityIcon,
     },
     {
       title: "Unparalleled Selection",
       description:
-        "Discover a diverse and meticulously curated range of RWAs to cater to your specific goals.",
+        "Find exactly what you're looking for in our handpicked collection of RWAs.",
       icon: selectionIcon,
     },
     {
       title: "Fee Structure",
       description:
-        "Benefit from a transparent marketplace that offers lower transaction costs compared to traditional commerce channels.",
+        "Benefit from lower transaction costs compared to traditional platforms.",
       icon: feeIcon,
     },
     {
       title: "Global Reach",
       description:
-        "Access a worldwide network of buyers and sellers, maximizing your potential for profitable investments.",
+        "Connect with buyers & sellers worldwide & expand your opportunities.",
       icon: reachIcon,
     },
   ];

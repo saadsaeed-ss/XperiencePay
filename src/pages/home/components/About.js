@@ -170,13 +170,12 @@ const About = () => {
               mb: { xs: "8px", md: "16px" },
             }}
           >
-            Unlock a new frontier of financial freedom and redefine how to
-            transact worldwide. Xperience Pay (XPP) bridges the gap between
-            traditional finance and the world of cryptocurrencies. Our
-            cutting-edge WEB3 marketplace empowers you to seamlessly buy, sell,
-            and trade real-world assets (RWAs) using cryptocurrency. Connect
-            with a network of buyers and sellers spanning the globe, expanding
-            your horizons and unlocking new opportunities.
+            Xperience Pay (XPP) is breaking down the barriers between
+            traditional finance and crypto-based purchases. Our secure WEB3
+            marketplace helps you buy, sell, and manage real-world assets (RWAs)
+            using cryptocurrency. Xperience Pay helps you connect with a network
+            of people buying and selling all over the world, and watch your
+            chances grow.
           </Typography>
           <Typography
             sx={{
@@ -186,12 +185,11 @@ const About = () => {
               fontFamily: '"Manrope", Helvetica',
             }}
           >
-            Our XPPUSD stablecoin serves as a reliable medium of exchange and
-            store of value within the XPP ecosystem. XPPUSD is pegged to the US
-            dollar, ensuring stability and predictability, facilitating
-            transactions with ease. XPPUSD offers users the best of both worlds
-            - the stability of fiat currencies and the innovation of
-            cryptocurrencies.
+            XPPUSD is pegged to the US dollar that makes it perfect for easy and
+            reliable transactions in the XPP ecosystem. You get the kind of
+            stability and predictability that makes trading a breeze. XPPUSD
+            combines the steadiness of regular money with the cool innovation of
+            crypto.
           </Typography>
         </Box>
         <Box>

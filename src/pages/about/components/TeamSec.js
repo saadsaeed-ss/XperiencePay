@@ -1,0 +1,186 @@
+import React from "react";
+import { Container, Box, Typography, Avatar } from "@mui/material";
+import LinkedIn from "../../../assets/linkedin.svg";
+
+import Team03 from "../../../assets/team03.png";
+import Team04 from "../../../assets/team04.png";
+import Team05 from "../../../assets/team05.png";
+import Team06 from "../../../assets/team06.png";
+import Team07 from "../../../assets/team07.png";
+
+const teamMembers = [
+  {
+    name: "CHRISTOPHE TAPA",
+    role: "Founder and CEO",
+    img: Team05,
+    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+  },
+  // {
+  //   name: "BISER DIMITROV",
+  //   role: "Chief Technology Officer",
+  //   img: Team03,
+  //   linkedin: "https://www.linkedin.com/in/biserdimitrov/",
+  // },
+  // {
+  //   name: "YIGIT CAN CEVIKOL",
+  //   role: "Digital Transformation/System Integration Manager",
+  //   img: Team04,
+  //   linkedin: "https://www.linkedin.com/in/yigit-can-cevikol-713536154/",
+  // },
+
+  // {
+  //   name: "DEBRA GAIL WHITE",
+  //   role: "Chief Operating Officer",
+  //   img: Team06,
+  //   linkedin: "https://www.linkedin.com/in/debragail/",
+  // },
+  // {
+  //   name: "Everett H Walker, Jr",
+  //   role: "Legal Counsel & Compliance Officer",
+  //   img: Team07,
+  //   linkedin: "https://www.linkedin.com/in/everett-h-walker-jr-18215118/",
+  // },
+];
+
+const TeamSec = () => {
+  return (
+    <Container
+      sx={{
+        width: "100%",
+        padding: "3% 5%",
+        color: "#fff",
+        fontFamily: '"Manrope", Helvetica',
+      }}
+    >
+      <Box
+        sx={{
+          textAlign: "center",
+        }}
+      >
+        <Typography
+          variant="h4"
+          component="h2"
+          sx={{
+            fontSize: "30px",
+            fontWeight: "700",
+            fontFamily: '"Manrope", Helvetica',
+            color: "#FDC500",
+            marginBottom: "20px",
+          }}
+        >
+          The XPP Team
+        </Typography>
+        <Typography
+          sx={{
+            fontFamily: '"Manrope", Helvetica',
+            fontSize: "18px",
+            marginBottom: "100px",
+          }}
+        >
+          The success of Xperience Pay (XPP) hinges on the dedication and
+          expertise of our exceptional team. Our dedicated team is comprised of
+          passionate professionals with extensive experience in finance,
+          blockchain technology, and real-world asset markets. We are driven by
+          a shared vision of making the RWA marketplace accessible and secure
+          for everyone.
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {teamMembers.map((member, index) => (
+          <Box
+            key={index}
+            sx={{
+              width: {
+                xs: "100%",
+                sm: "44%",
+                md: "20%",
+              },
+              textAlign: "center",
+              position: "relative",
+              padding: "20px 10px",
+              backgroundColor: "#222",
+              margin: {
+                xs: "0 auto 20px", // Center the card horizontally on small screens
+                sm: "0 20px 20px 0", // Apply margin normally on larger screens
+              },
+              overflow: "hidden",
+              "&::before": {
+                content: '""',
+                position: "absolute",
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                padding: "2px",
+                background: "linear-gradient(90deg, #fdd835, #3A5EFC)",
+                WebkitMask:
+                  "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                WebkitMaskComposite: "destination-out",
+                maskComposite: "exclude",
+              },
+            }}
+          >
+            <Avatar
+              src={member.img}
+              alt={member.name}
+              sx={{
+                width: 150,
+                height: 150,
+                margin: "0 auto 20px",
+              }}
+            />
+            <Typography
+              variant="h6"
+              component="h3"
+              sx={{
+                fontSize: "20px",
+                fontWeight: "500",
+                marginBottom: "10px",
+                fontFamily: '"Manrope-SemiBold", Helvetica',
+              }}
+            >
+              {member.name}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "16px",
+                color: "#ccc",
+                marginBottom: "10px",
+                fontFamily: '"Manrope-SemiBold", Helvetica',
+              }}
+            >
+              {member.role}
+            </Typography>
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-block", marginTop: "10px" }}
+            >
+              <img
+                src={LinkedIn}
+                alt="LinkedIn"
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  cursor: "pointer",
+                  position: "relative",
+                  zIndex: 1,
+                  //properties to make the linkedIn Icon clickable
+                }}
+              />
+            </a>
+          </Box>
+        ))}
+      </Box>
+    </Container>
+  );
+};
+
+export default TeamSec;

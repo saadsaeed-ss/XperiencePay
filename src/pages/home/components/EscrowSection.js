@@ -94,8 +94,8 @@ const EscrowSection = () => {
               }}
             />
             <Typography
-              variant={isSmallScreen ? "h4" : isMediumScreen ? "h3" : "h2"}
-              sx={{ fontWeight: "bold" }}
+              fontSize={{ xs: "36px", md: "80px" }}
+              sx={{ fontWeight: "semi-bold" }}
             >
               55+
             </Typography>
@@ -130,7 +130,8 @@ const EscrowSection = () => {
               }}
             >
               <Typography
-                variant={isSmallScreen ? "h6" : isMediumScreen ? "h5" : "h4"} // Make the heading smaller
+                component="span"
+                fontSize={{ xs: "24px", md: "48px" }} // Make the heading smaller
                 sx={{ fontWeight: "bold", mb: 2 }}
               >
                 Our escrow account enables you to buy with confidence.

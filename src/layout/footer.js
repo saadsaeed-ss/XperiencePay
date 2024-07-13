@@ -88,7 +88,8 @@ export default function Footer() {
             }}
           >
             <Typography
-              variant="body2"
+              variant="h6"
+              fontSize="14px"
               fontWeight={600}
               color={"white"}
               fontFamily={'"Manrope", Helvetica'}
@@ -153,7 +154,12 @@ export default function Footer() {
               gap: 1,
             }}
           >
-            <Typography variant="body2" fontWeight={600} color={"white"}>
+            <Typography
+              variant="h6"
+              fontSize="14px"
+              fontWeight={600}
+              color={"white"}
+            >
               Token
             </Typography>
             <Link
@@ -194,7 +200,12 @@ export default function Footer() {
               gap: 1,
             }}
           >
-            <Typography variant="body2" fontWeight={600} color={"white"}>
+            <Typography
+              variant="h6"
+              fontSize="14px"
+              fontWeight={600}
+              color={"white"}
+            >
               About
             </Typography>
             <Link
@@ -245,7 +256,12 @@ export default function Footer() {
               gap: 1,
             }}
           >
-            <Typography variant="body2" fontWeight={600} color={"white"}>
+            <Typography
+              variant="h6"
+              fontSize="14px"
+              fontWeight={600}
+              color={"white"}
+            >
               Community
             </Typography>
             <Link

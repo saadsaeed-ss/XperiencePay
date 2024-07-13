@@ -67,6 +67,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -392,6 +393,7 @@ const Header = () => {
         }}
       >
         <Typography
+          component="span"
           sx={{
             fontSize: { xs: "16px", md: "20px" },
             fontFamily: '"Manrope", Helvetica',

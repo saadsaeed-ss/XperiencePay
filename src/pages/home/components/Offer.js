@@ -85,7 +85,12 @@ const OfferSec = () => {
                   width="60%"
                   height="auto"
                 />
-                <Typography variant="h5" component="div" gutterBottom>
+                <Typography
+                  variant="h4"
+                  fontSize={{ xs: "20px", md: "28px" }}
+                  fontWeight="bold"
+                  gutterBottom
+                >
                   XPP WEB3 Marketplace
                 </Typography>
               </ContentBox>
@@ -126,7 +131,12 @@ const OfferSec = () => {
             <CardContent style={{ flexGrow: 1 }}>
               <ContentBox>
                 <Icon src={stableCoin} alt="Icon 2" width="38%" height="auto" />
-                <Typography variant="h5" component="div" gutterBottom>
+                <Typography
+                  variant="h4"
+                  fontSize={{ xs: "20px", md: "28px" }}
+                  fontWeight="bold"
+                  gutterBottom
+                >
                   XPP Stablecoin
                 </Typography>
               </ContentBox>
@@ -169,7 +179,12 @@ const OfferSec = () => {
             <CardContent style={{ flexGrow: 1 }}>
               <ContentBox>
                 <Icon src={wallet} alt="Icon 1" width="60%" height="auto" />
-                <Typography variant="h5" component="div" gutterBottom>
+                <Typography
+                  variant="h4"
+                  fontSize={{ xs: "20px", md: "28px" }}
+                  fontWeight="bold"
+                  gutterBottom
+                >
                   XPP Wallet
                 </Typography>
               </ContentBox>
@@ -210,7 +225,12 @@ const OfferSec = () => {
             <CardContent style={{ flexGrow: 1 }}>
               <ContentBox>
                 <Icon src={payments} alt="Icon 2" width="30%" height="auto" />
-                <Typography variant="h5" component="div" gutterBottom>
+                <Typography
+                  variant="h4"
+                  fontSize={{ xs: "20px", md: "28px" }}
+                  fontWeight="bold"
+                  gutterBottom
+                >
                   Cross-Border Payments
                 </Typography>
               </ContentBox>

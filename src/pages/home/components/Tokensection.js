@@ -61,6 +61,7 @@ const TokenSection = () => {
           }}
         >
           <Typography
+            component="span"
             sx={{
               textAlign: "center",
               color: "#FDC500",
@@ -73,6 +74,7 @@ const TokenSection = () => {
             $XPP Token Launching Soon
           </Typography>
           <Typography
+            variant="h5"
             sx={{
               fontFamily: '"Manrope", Helvetica',
               fontWeight: 800,

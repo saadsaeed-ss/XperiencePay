@@ -89,9 +89,10 @@ const SubscriptionSection = () => {
             }}
           >
             <Typography
-              variant="h1"
+              variant="h5"
               sx={{
-                fontSize: { xs: "42px", md: "56px" },
+                fontSize: { xs: "36px", md: "56px" },
+                fontWeight: "bold",
               }}
             >
               Join Us on the <br /> Future of Finance
@@ -160,7 +161,13 @@ const SubscriptionSection = () => {
             gap: { xs: 2, sm: 4 },
           }}
         >
-          <Typography variant="h2">Follow us on social media!</Typography>
+          <Typography
+            variant="h5"
+            fontWeight="bold"
+            sx={{ fontSize: { xs: "20px", md: "32px" } }}
+          >
+            Follow us on social media!
+          </Typography>
           <Box
             sx={{
               display: "flex",

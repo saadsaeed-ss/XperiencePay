@@ -1,11 +1,13 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import StyledText from "../../../shared/components/StyledText";
 
 const GradientText = ({ children }) => {
   return (
     <Box
       component="span"
+      fontSize={{ xs: "28px", md: "48px" }}
+      fontWeight={900}
       sx={{
         background: "linear-gradient(90deg, #FFD700, #0000FF)",
         WebkitBackgroundClip: "text",
@@ -19,17 +21,13 @@ const GradientText = ({ children }) => {
 
 const HeaderText = () => {
   return (
-    <Box
-      sx={{
-        padding: {
-          xs: "60px 30px 20px", // small screen
-          sm: "100px 50px 40px", // medium screen
-          md: "120px 70px 50px", // large screen
-        },
-      }}
-    >
-      <StyledText
+    <Container maxWidth="100%" sx={{ px: { xs: "5%", md: "5%" }, py: "7%" }}>
+      {" "}
+      <Typography
+        gutterBottom
+        variant="h3"
         sx={{
+          fontFamily: '"Manrope", Helvetica',
           fontSize: {
             xs: "28px", // small screen
             sm: "38px", // medium screen
@@ -39,19 +37,9 @@ const HeaderText = () => {
         }}
       >
         Seamlessly transact real-world assets (RWAs)
-        <Box
-          component="span"
-          sx={{
-            display: {
-              xs: "none", // hide line break on small screen
-              sm: "none", // hide line break on medium screen
-              md: "block", // show line break on large screen
-            },
-          }}
-        />
-        <GradientText> Using Cryptocurrencies</GradientText>
-      </StyledText>
-    </Box>
+      </Typography>
+      <GradientText> Using Cryptocurrencies</GradientText>
+    </Container>
   );
 };
 

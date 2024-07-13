@@ -144,13 +144,20 @@ const About = () => {
         >
           <Typography
             fontSize="50px"
-            style={{ marginBottom: 0, fontWeight: "bold" }}
+            variant="h2"
+            style={{
+              marginBottom: 0,
+              fontWeight: "bold",
+              fontFamily: '"Manrope", Helvetica',
+            }}
           >
             Xperience Pay
           </Typography>
           <Typography
+            variant="h3"
             sx={{
-              fontSize: { sx: "14px", md: "20px" },
+              fontSize: { xs: "16px", md: "20px" },
+              fontWeight: 600,
               color: "white",
               lineHeight: "170%",
               fontFamily: '"Manrope", Helvetica',
@@ -252,7 +259,7 @@ const About = () => {
                 }}
               >
                 <Typography
-                  component="span"
+                  variant="h4"
                   sx={{
                     fontSize: { xs: "20px", md: "24px" },
                     fontWeight: 700,

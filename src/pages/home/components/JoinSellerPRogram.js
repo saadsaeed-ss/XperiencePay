@@ -55,7 +55,16 @@ const JoinSellerProgram = () => {
     >
       <InnerContainer>
         <TextContainer>
-          <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
+          <Typography
+            variant="h5"
+            fontSize={{ xs: "24px", md: "48px" }}
+            fontWeight="bold"
+            x={{
+              fontWeight: "bold",
+              mb: 2,
+              fontFamily: '"Manrope", Helvetica',
+            }}
+          >
             Join our trusted seller program
           </Typography>
           <StyledParagraph
@@ -63,6 +72,7 @@ const JoinSellerProgram = () => {
               fontSize: { sx: "14px", md: "16px" },
               lineHeight: "170%",
               fontWeight: 300,
+              fontFamily: '"Manrope", Helvetica',
             }}
           >
             Want to sell on our platform? Join our team of trusted sellers and

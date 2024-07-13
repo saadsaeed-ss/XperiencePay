@@ -18,7 +18,8 @@ const CardSection = ({ imageWidth = "80%" }) => {
   return (
     <Box
       sx={{
-        padding: "10%",
+        px: { xs: "5%", md: "5%" },
+        py: "5%",
         borderBottom: "1px solid gray",
       }}
     >

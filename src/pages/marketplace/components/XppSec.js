@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Button, Card } from "@mui/material";
 import { styled } from "@mui/system";
 import Globe from "../../../assets/Bigglobe.svg";
+import arrowForward from "../../../assets/arrow_forward.svg";
 
 const StyledCardMedia = styled("img")(({ theme, imageWidth }) => ({
   width: imageWidth,
@@ -59,39 +60,56 @@ const XppSec = ({ imageWidth = "100%" }) => {
             possibilities and discover the potential of real-world assets.
           </Typography>
 
-          <Button
-            variant="contained"
-            color="primary"
-            size="medium"
-            sx={{
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
               fontWeight: 700,
-              textTransform: "none",
               fontFamily: '"Manrope", Helvetica',
-              backgroundColor: "#FDC500",
-              color: "#0F1114",
-              marginTop: "20px",
-              "&:hover": {
-                backgroundColor: "#e6b300",
-              },
+              color: "#FDC500",
+              textDecoration: "none",
+              marginTop: "30px",
             }}
           >
             Start Exploring
-          </Button>
-          <Button
-            variant="text"
-            color="primary"
-            size="medium"
-            sx={{
+            <img
+              src={arrowForward}
+              style={{
+                width: "16px",
+                height: "16px",
+                marginLeft: "15px", // Adjust spacing as needed
+              }}
+              alt="Arrow Icon"
+            />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
               fontWeight: 700,
-              textTransform: "none",
               fontFamily: '"Manrope", Helvetica',
               color: "#FDC500",
+              textDecoration: "none",
               marginTop: "20px",
-              marginLeft: "20px",
             }}
           >
             Contact our support team
-          </Button>
+            <img
+              src={arrowForward}
+              style={{
+                width: "16px",
+                height: "16px",
+                marginLeft: "15px", // Adjust spacing as needed
+              }}
+              alt="Arrow Icon"
+            />
+          </a>
         </Box>
         <Box
           sx={{

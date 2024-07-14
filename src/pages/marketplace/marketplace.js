@@ -5,6 +5,8 @@ import StepsSec from "./components/StepsSec";
 import XppSec from "./components/XppSec";
 import { Helmet } from "react-helmet";
 import OfferingSec from "./components/Offerings";
+import BuyersSection from "./components/BuyersSec";
+import SellersSection from "./components/SellersSec";
 
 function Marketplace() {
   return (
@@ -15,6 +17,8 @@ function Marketplace() {
       <Header />
       <StepsSec />
       <OfferingSec />
+      <BuyersSection />
+      <SellersSection />
       <XppSec />
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import { Grid, Typography, Button, Card, Box } from "@mui/material";
+import { Box, Typography, Button, Card } from "@mui/material";
 import { styled } from "@mui/system";
-import XppSecImg from "../../../assets/xppgrad.svg";
+import Globe from "../../../assets/Bigglobe.svg";
 
 const StyledCardMedia = styled("img")(({ theme, imageWidth }) => ({
   width: imageWidth,
@@ -13,16 +13,29 @@ const StyledCardMedia = styled("img")(({ theme, imageWidth }) => ({
   },
 }));
 
-const XppSec = ({ imageWidth = "80%" }) => {
+const XppSec = ({ imageWidth = "100%" }) => {
   return (
     <Box
       sx={{
-        padding: "5%",
-        borderBottom: "1px solid gray",
+        padding: "5% 10%",
+        marginBottom: "50px",
       }}
     >
-      <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} md={6}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "center", // Center content horizontally
+          alignItems: "center", // Center content vertically
+          gap: 4, // Adds spacing between the two inner boxes
+        }}
+      >
+        <Box
+          sx={{
+            width: { xs: "100%", md: "75%" },
+            paddingRight: { xs: 0, md: 2 },
+          }}
+        >
           <Typography
             variant="h4"
             sx={{
@@ -32,7 +45,7 @@ const XppSec = ({ imageWidth = "80%" }) => {
               fontSize: "1.6rem",
             }}
           >
-            Experience the future of asset transactions with Xperience Pay (XPP)
+            Join the Xperience Pay WEB3 Marketplace Revolution
           </Typography>
           <Typography
             variant="body1"
@@ -42,10 +55,8 @@ const XppSec = ({ imageWidth = "80%" }) => {
               fontSize: "16px",
             }}
           >
-            With Xperience Pay, buying RWAs is a secure, efficient, and
-            empowering experience.
-            <br /> Sign up today and join our global community of buyers and
-            sellers revolutionizing the way we transact real-world assets.
+            Explore a new chapter in the world of RWAs. Open a world of
+            possibilities and discover the potential of real-world assets.
           </Typography>
 
           <Button
@@ -64,20 +75,40 @@ const XppSec = ({ imageWidth = "80%" }) => {
               },
             }}
           >
-            XPP Marketplace
+            Start Exploring
           </Button>
-        </Grid>
-        <Grid item xs={12} md={6}>
+          <Button
+            variant="text"
+            color="primary"
+            size="medium"
+            sx={{
+              fontWeight: 700,
+              textTransform: "none",
+              fontFamily: '"Manrope", Helvetica',
+              color: "#FDC500",
+              marginTop: "20px",
+              marginLeft: "20px",
+            }}
+          >
+            Contact our support team
+          </Button>
+        </Box>
+        <Box
+          sx={{
+            width: { xs: "100%", md: "50%" },
+            display: "flex",
+            justifyContent: "end",
+          }}
+        >
           <Card sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
             <StyledCardMedia
-              src={XppSecImg}
-              alt="Experience the future of asset transactions 
-with Xperience Pay (XPP)"
+              src={Globe}
+              alt="Join the Xperience Pay WEB3 Marketplace Revolution"
               imageWidth={imageWidth}
             />
           </Card>
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </Box>
   );
 };

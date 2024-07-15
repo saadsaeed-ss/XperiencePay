@@ -6,6 +6,7 @@ import About from "./pages/about/about";
 import TrustedSellerPage from "./pages/trustedSellers/trustedSeller";
 import WorksPage from "./pages/works/works";
 import Marketplace from "./pages/marketplace/marketplace";
+import StableCoin from "./pages/stableCoin/stableCoin";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/trusted-seller" element={<TrustedSellerPage />} />
           <Route path="/works" element={<WorksPage />} />
           <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/stablecoin" element={<StableCoin />} />
         </Routes>
       </BrowserRouter>
     </div>

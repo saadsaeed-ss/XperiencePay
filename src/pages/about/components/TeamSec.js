@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Box, Typography, Avatar } from "@mui/material";
 import LinkedIn from "../../../assets/linkedin.svg";
 
-import Team03 from "../../../assets/team03.png";
-import Team04 from "../../../assets/team04.png";
 import Team05 from "../../../assets/team05.png";
-import Team06 from "../../../assets/team06.png";
-import Team07 from "../../../assets/team07.png";
 
 const teamMembers = [
   {
@@ -15,31 +11,6 @@ const teamMembers = [
     img: Team05,
     linkedin: "https://www.linkedin.com/in/christophe-tapa/",
   },
-  // {
-  //   name: "BISER DIMITROV",
-  //   role: "Chief Technology Officer",
-  //   img: Team03,
-  //   linkedin: "https://www.linkedin.com/in/biserdimitrov/",
-  // },
-  // {
-  //   name: "YIGIT CAN CEVIKOL",
-  //   role: "Digital Transformation/System Integration Manager",
-  //   img: Team04,
-  //   linkedin: "https://www.linkedin.com/in/yigit-can-cevikol-713536154/",
-  // },
-
-  // {
-  //   name: "DEBRA GAIL WHITE",
-  //   role: "Chief Operating Officer",
-  //   img: Team06,
-  //   linkedin: "https://www.linkedin.com/in/debragail/",
-  // },
-  // {
-  //   name: "Everett H Walker, Jr",
-  //   role: "Legal Counsel & Compliance Officer",
-  //   img: Team07,
-  //   linkedin: "https://www.linkedin.com/in/everett-h-walker-jr-18215118/",
-  // },
 ];
 
 const TeamSec = () => {

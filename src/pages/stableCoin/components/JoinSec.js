@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button, Card } from "@mui/material";
 import { styled } from "@mui/system";
-import Globe from "../../../assets/Bigglobe.svg";
+import Lock from "../../../assets/potentialLock.svg";
 import arrowForward from "../../../assets/arrow_forward.svg";
 
 const StyledCardMedia = styled("img")(({ theme, imageWidth }) => ({
@@ -14,7 +14,7 @@ const StyledCardMedia = styled("img")(({ theme, imageWidth }) => ({
   },
 }));
 
-const XppSec = ({ imageWidth = "100%" }) => {
+const JoinSec = ({ imageWidth = "100%" }) => {
   return (
     <Box
       sx={{
@@ -48,17 +48,6 @@ const XppSec = ({ imageWidth = "100%" }) => {
           >
             Join the Xperience Pay WEB3 Marketplace Revolution
           </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              mb: 2,
-              fontFamily: '"Manrope", Helvetica',
-              fontSize: "16px",
-            }}
-          >
-            Explore a new chapter in the world of RWAs. Open a world of
-            possibilities and discover the potential of real-world assets.
-          </Typography>
 
           <a
             href="#"
@@ -74,7 +63,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
               marginTop: "30px",
             }}
           >
-            Start Exploring
+            Explore the Xperience Pay WEB3 Marketplace
             <img
               src={arrowForward}
               style={{
@@ -99,7 +88,32 @@ const XppSec = ({ imageWidth = "100%" }) => {
               marginTop: "20px",
             }}
           >
-            Contact our support team
+            Download XPP Wallet for iOS
+            <img
+              src={arrowForward}
+              style={{
+                width: "16px",
+                height: "16px",
+                marginLeft: "15px", // Adjust spacing as needed
+              }}
+              alt="Arrow Icon"
+            />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              fontWeight: 700,
+              fontFamily: '"Manrope", Helvetica',
+              color: "#FDC500",
+              textDecoration: "none",
+              marginTop: "20px",
+            }}
+          >
+            Download XPP Wallet for Android
             <img
               src={arrowForward}
               style={{
@@ -115,12 +129,12 @@ const XppSec = ({ imageWidth = "100%" }) => {
           sx={{
             width: { xs: "100%", md: "50%" },
             display: "flex",
-            justifyContent: "end",
+            justifyContent: "center",
           }}
         >
           <Card sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
             <StyledCardMedia
-              src={Globe}
+              src={Lock}
               alt="Join the Xperience Pay WEB3 Marketplace Revolution"
               imageWidth={imageWidth}
             />
@@ -131,4 +145,4 @@ const XppSec = ({ imageWidth = "100%" }) => {
   );
 };
 
-export default XppSec;
+export default JoinSec;

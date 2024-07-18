@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/HeaderSec";
 import Footer from "../../layout/footer";
-import XppSec from "./components/XppSec";
+import JoinSec from "./components/JoinSec";
 import { Helmet } from "react-helmet";
 import StandardSec from "./components/StandardSec";
 import AuditRepoSec from "./components/AuditRepoSec";
@@ -17,7 +17,7 @@ function StableCoin() {
       <StandardSec />
       <AuditRepoSec />
       <BenefitsSec />
-      <XppSec />
+      <JoinSec />
       <Footer />
     </div>
   );

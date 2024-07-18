@@ -7,7 +7,10 @@ import TrustedSellerPage from "./pages/trustedSellers/trustedSeller";
 import WorksPage from "./pages/works/works";
 import Marketplace from "./pages/marketplace/marketplace";
 import StableCoin from "./pages/stableCoin/stableCoin";
-
+import Wallet from "./pages/wallet/wallet";
+//
+//
+//
 function App() {
   return (
     <div>
@@ -20,6 +23,7 @@ function App() {
           <Route path="/works" element={<WorksPage />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/stablecoin" element={<StableCoin />} />
+          <Route path="/wallet" element={<Wallet />} />
         </Routes>
       </BrowserRouter>
     </div>

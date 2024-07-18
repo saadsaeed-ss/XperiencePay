@@ -121,7 +121,7 @@ const Header = () => {
         sx={{
           width: "100%",
           height: "100%",
-          background: "rgba(204, 204, 204, 1)",
+          background: "#ffffff33",
           marginTop: "5%",
           marginBottom: "10px",
         }}

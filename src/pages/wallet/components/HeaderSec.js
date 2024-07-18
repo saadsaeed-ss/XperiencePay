@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Container, Typography, Divider } from "@mui/material";
-import Image from "../../../assets/auditRepoSec.svg";
+import Image from "../../../assets/walletHeaderImg.svg";
 
-const AuditRepoSec = () => {
+const Header = () => {
   return (
     <Box
       sx={{
@@ -25,24 +25,12 @@ const AuditRepoSec = () => {
         >
           <Box
             flex={1}
-            display="flex"
-            justifyContent={{ xs: "center", md: "flex-start" }}
-            sx={{
-              width: { xs: "100%", md: "auto" },
-              mt: { xs: 4, md: 0 },
-            }}
-          >
-            <img src={Image} style={{ width: "90%" }} />
-          </Box>
-
-          <Box
-            flex={1}
             sx={{
               display: "flex",
               flexDirection: "column",
               alignItems: { xs: "center", md: "flex-start" },
               textAlign: { xs: "center", md: "left" },
-              mt: { xs: 4, md: 0 },
+              mb: { xs: 4, md: 0 },
               gap: { xs: "20px", md: "40px" },
             }}
           >
@@ -57,14 +45,14 @@ const AuditRepoSec = () => {
               <Typography
                 gutterBottom
                 sx={{
-                  fontSize: { xs: "20px", md: "36px" },
+                  fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
                   fontFamily: '"Manrope", Helvetica',
                   color: "white",
                   lineHeight: 1.1,
                 }}
               >
-                Regular Audits and Reporting
+                XPP Wallet
               </Typography>
               <Typography
                 gutterBottom
@@ -75,9 +63,15 @@ const AuditRepoSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                XPP prioritizes user trust and confidence. To achieve this,
-                XPPUSD undergoes regular audits by independent third-party
-                firms.
+                The Xperience Pay Wallet (XPP Wallet) is your essential
+                companion for navigating the exciting world of cryptocurrency
+                and real-world assets (RWA) within the Xperience Pay ecosystem.
+                Xperience Pay Wallet is designed with simplicity, security, and
+                convenience in mind. This user-friendly mobile app acts as your
+                secure gateway to holding and managing your XPPUSD stablecoin.
+                It seamlessly integrates with the Xperience Pay WEB3
+                Marketplace, allowing you to effortlessly convert your crypto
+                holdings into XPPUSD for smooth transactions.
               </Typography>
               <Typography
                 sx={{
@@ -88,23 +82,25 @@ const AuditRepoSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                These audits verify the integrity of the reserve system and
-                ensure the continued 1:1 peg of XPPUSD to the US dollar.
-              </Typography>
-              <Typography
-                gutterBottom
-                sx={{
-                  fontSize: { sx: "14px", md: "18px" },
-                  lineHeight: "170%",
-                  fontFamily: '"Manrope", Helvetica',
-                  maxWidth: { xs: "100%", md: "100%" },
-                }}
-              >
-                The results of these audits are made publicly available,
-                fostering transparency and accountability within the Xperience
-                Pay ecosystem.
+                The XPP Wallet empowers you to take control of your crypto
+                holdings and interact with decentralized applications (DApps)
+                seamlessly. The XPP Wallet ensures a smooth and efficient
+                experience, making it the go-to solution for users looking to
+                navigate the world of decentralized finance with confidence.
               </Typography>
             </Box>
+          </Box>
+
+          <Box
+            flex={1}
+            display="flex"
+            justifyContent={{ xs: "center", md: "flex-end" }}
+            sx={{
+              width: { xs: "100%", md: "auto" },
+              mt: { xs: 4, md: 0 },
+            }}
+          >
+            <img src={Image} style={{ width: "80%" }} />
           </Box>
         </Box>
       </Container>
@@ -121,4 +117,4 @@ const AuditRepoSec = () => {
   );
 };
 
-export default AuditRepoSec;
+export default Header;

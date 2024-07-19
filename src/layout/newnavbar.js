@@ -96,7 +96,7 @@ function AppAppBar() {
                 src={Logo}
                 style={logoStyle}
                 alt="logo of Xperience Pay"
-                href="/"
+                href="/home"
               />
             </Box>
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>

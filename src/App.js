@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          {/* <Route path="/home" element={<Home />} /> For making URL/home change. */}
+          <Route path="/home" element={<Home />} /> For making URL/home change.
           <Route path="/about" element={<About />} />
           <Route path="/trusted-seller" element={<TrustedSellerPage />} />
           <Route path="/works" element={<WorksPage />} />

@@ -7,6 +7,10 @@ import { Helmet } from "react-helmet";
 import OfferingSec from "./components/Offerings";
 import BuyersSection from "./components/BuyersSec";
 import SellersSection from "./components/SellersSec";
+import AppAppBar from "../../layout/newnavbar";
+//
+//
+//
 
 function Marketplace() {
   return (
@@ -14,6 +18,7 @@ function Marketplace() {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
+      <AppAppBar />
       <Header />
       <StepsSec />
       <OfferingSec />

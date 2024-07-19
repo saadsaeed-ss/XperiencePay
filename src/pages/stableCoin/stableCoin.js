@@ -6,6 +6,10 @@ import { Helmet } from "react-helmet";
 import StandardSec from "./components/StandardSec";
 import AuditRepoSec from "./components/AuditRepoSec";
 import BenefitsSec from "./components/BenefitsSec";
+import AppAppBar from "../../layout/newnavbar";
+//
+//
+//
 
 function StableCoin() {
   return (
@@ -13,6 +17,7 @@ function StableCoin() {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
+      <AppAppBar />
       <Header />
       <StandardSec />
       <AuditRepoSec />

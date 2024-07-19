@@ -6,6 +6,10 @@ import TabsSec from "../../layout/tabsSec";
 import Footer from "../../layout/footer";
 import { Tab } from "@mui/material";
 import { Helmet } from "react-helmet";
+import AppAppBar from "../../layout/newnavbar";
+//
+//
+//
 
 function TrustedSellerPage() {
   return (
@@ -13,6 +17,7 @@ function TrustedSellerPage() {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
+      <AppAppBar />
       <Header />
       <FeatureSec />
       <JoinSellerProgram />

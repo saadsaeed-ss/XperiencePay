@@ -5,6 +5,10 @@ import DownloadSec from "./components/DownloadSec";
 import { Helmet } from "react-helmet";
 import FeatureSec from "./components/FeatureSec";
 import CardSec from "./components/CardsSec";
+import AppAppBar from "../../layout/newnavbar";
+//
+//
+//
 
 function Wallet() {
   return (
@@ -12,6 +16,7 @@ function Wallet() {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
+      <AppAppBar />
       <Header />
       <CardSec />
       <FeatureSec />

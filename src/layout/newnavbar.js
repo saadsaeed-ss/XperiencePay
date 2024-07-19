@@ -96,12 +96,12 @@ function AppAppBar() {
                 src={Logo}
                 style={logoStyle}
                 alt="logo of Xperience Pay"
-                href="#"
+                href="/"
               />
             </Box>
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
               <MenuItem
-                // onClick={() => scrollToSection("whyus")}
+                onClick={(event) => (window.location.href = "/")}
                 sx={{ py: "6px", px: "12px" }}
               >
                 <Typography
@@ -115,7 +115,7 @@ function AppAppBar() {
                 </Typography>
               </MenuItem>
               <MenuItem
-                onClick={(event) => handleMenuOpen(event, "about")}
+                onClick={(event) => (window.location.href = "/about")}
                 sx={{
                   py: "6px",
                   px: "12px",
@@ -131,7 +131,13 @@ function AppAppBar() {
                   }}
                 >
                   About us
-                  <ArrowDropDownIcon sx={{ ml: 1 }} />
+                  <ArrowDropDownIcon
+                    sx={{ ml: 1 }}
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      handleMenuOpen(event, "about");
+                    }}
+                  />
                 </Typography>
               </MenuItem>
               <Menu
@@ -150,7 +156,7 @@ function AppAppBar() {
               >
                 <MenuItem
                   onClick={() => {
-                    scrollToSection("about-subsection1");
+                    window.location.href = "/our-company";
                     handleMenuClose("about");
                   }}
                   sx={{ color: "white" }}
@@ -159,7 +165,7 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    scrollToSection("about-subsection2");
+                    window.location.href = "/trusted-seller";
                     handleMenuClose("about");
                   }}
                   sx={{ color: "white" }}
@@ -168,8 +174,7 @@ function AppAppBar() {
                 </MenuItem>
               </Menu>
               <MenuItem
-                //onClick={() => scrollToSection("whyus")}
-
+                onClick={(event) => (window.location.href = "/marketplace")}
                 sx={{
                   py: "6px",
                   px: "12px",
@@ -186,7 +191,7 @@ function AppAppBar() {
                 </Typography>
               </MenuItem>
               <MenuItem
-                //onClick={() => scrollToSection("products")}
+                onClick={(event) => (window.location.href = "/works")}
                 sx={{ py: "6px", px: "12px" }}
               >
                 <Typography
@@ -235,8 +240,8 @@ function AppAppBar() {
               >
                 <MenuItem
                   onClick={() => {
-                    scrollToSection("about-subsection1");
-                    handleMenuClose("products");
+                    window.location.href = "/stablecoin";
+                    handleMenuClose("prodcuts");
                   }}
                   sx={{ color: "white" }}
                 >
@@ -244,8 +249,8 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    scrollToSection("about-subsection2");
-                    handleMenuClose("products");
+                    window.location.href = "/wallet";
+                    handleMenuClose("prodcuts");
                   }}
                   sx={{ color: "white" }}
                 >
@@ -348,7 +353,7 @@ function AppAppBar() {
                     </Typography>
                   </MenuItem>
                   <MenuItem
-                    onClick={(event) => handleMenuOpen(event, "about")}
+                    onClick={(event) => (window.location.href = "/about")}
                     sx={{
                       py: "6px",
                       px: "12px",
@@ -364,7 +369,13 @@ function AppAppBar() {
                       }}
                     >
                       About us
-                      <ArrowDropDownIcon sx={{ ml: 1 }} />
+                      <ArrowDropDownIcon
+                        sx={{ ml: 1 }}
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          handleMenuOpen(event, "about");
+                        }}
+                      />
                     </Typography>
                   </MenuItem>
                   <Menu
@@ -383,7 +394,7 @@ function AppAppBar() {
                   >
                     <MenuItem
                       onClick={() => {
-                        scrollToSection("about-subsection1");
+                        window.location.href = "/our-company";
                         handleMenuClose("about");
                       }}
                       sx={{ color: "white" }}
@@ -392,7 +403,7 @@ function AppAppBar() {
                     </MenuItem>
                     <MenuItem
                       onClick={() => {
-                        scrollToSection("about-subsection2");
+                        window.location.href = "/trusted-sellers";
                         handleMenuClose("about");
                       }}
                       sx={{ color: "white" }}
@@ -401,8 +412,7 @@ function AppAppBar() {
                     </MenuItem>
                   </Menu>
                   <MenuItem
-                    //onClick={() => scrollToSection("whyus")}
-
+                    onClick={(event) => (window.location.href = "/marketplace")}
                     sx={{
                       py: "6px",
                       px: "12px",
@@ -419,7 +429,7 @@ function AppAppBar() {
                     </Typography>
                   </MenuItem>
                   <MenuItem
-                    //onClick={() => scrollToSection("products")}
+                    onClick={(event) => (window.location.href = "/works")}
                     sx={{ py: "6px", px: "12px" }}
                   >
                     <Typography
@@ -468,8 +478,8 @@ function AppAppBar() {
                   >
                     <MenuItem
                       onClick={() => {
-                        scrollToSection("about-subsection1");
-                        handleMenuClose("products");
+                        window.location.href = "/stablecoin";
+                        handleMenuClose("prodcuts");
                       }}
                       sx={{ color: "white" }}
                     >
@@ -477,8 +487,8 @@ function AppAppBar() {
                     </MenuItem>
                     <MenuItem
                       onClick={() => {
-                        scrollToSection("about-subsection2");
-                        handleMenuClose("products");
+                        window.location.href = "/wallet";
+                        handleMenuClose("prodcuts");
                       }}
                       sx={{ color: "white" }}
                     >

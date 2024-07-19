@@ -10,7 +10,9 @@ import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Logo from "../assets/Logo.svg";
+import Menu from "@mui/material/Menu";
 
 const logoStyle = {
   width: "200px",
@@ -20,9 +22,27 @@ const logoStyle = {
 
 function AppAppBar() {
   const [open, setOpen] = React.useState(false);
+  const [anchorElAbout, setAnchorElAbout] = React.useState(null);
+  const [anchorElProducts, setAnchorElProducts] = React.useState(null);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const handleMenuOpen = (event, menu) => {
+    if (menu === "about") {
+      setAnchorElAbout(event.currentTarget);
+    } else if (menu === "products") {
+      setAnchorElProducts(event.currentTarget);
+    }
+  };
+
+  const handleMenuClose = (menu) => {
+    if (menu === "about") {
+      setAnchorElAbout(null);
+    } else if (menu === "products") {
+      setAnchorElProducts(null);
+    }
   };
 
   const scrollToSection = (sectionId) => {
@@ -81,7 +101,7 @@ function AppAppBar() {
             </Box>
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
               <MenuItem
-                onClick={() => scrollToSection("about")}
+                // onClick={() => scrollToSection("whyus")}
                 sx={{ py: "6px", px: "12px" }}
               >
                 <Typography
@@ -91,12 +111,69 @@ function AppAppBar() {
                     fontFamily: '"Manrope", Helvetica',
                   }}
                 >
-                  About
+                  Home
                 </Typography>
               </MenuItem>
               <MenuItem
-                onClick={() => scrollToSection("whyus")}
-                sx={{ py: "6px", px: "12px" }}
+                onClick={(event) => handleMenuOpen(event, "about")}
+                sx={{
+                  py: "6px",
+                  px: "12px",
+                  color: anchorElAbout ? "#FDC500" : "white",
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    fontFamily: '"Manrope", Helvetica',
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  About us
+                  <ArrowDropDownIcon sx={{ ml: 1 }} />
+                </Typography>
+              </MenuItem>
+              <Menu
+                anchorEl={anchorElAbout}
+                open={Boolean(anchorElAbout)}
+                onClose={() => handleMenuClose("about")}
+                sx={{
+                  "& .MuiPaper-root": {
+                    bgcolor: "#0F1114",
+                    color: "white",
+                    borderColor: "#3f4143",
+                    borderStyle: "solid",
+                    borderWidth: "1px",
+                  },
+                }}
+              >
+                <MenuItem
+                  onClick={() => {
+                    scrollToSection("about-subsection1");
+                    handleMenuClose("about");
+                  }}
+                  sx={{ color: "white" }}
+                >
+                  Our Company
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    scrollToSection("about-subsection2");
+                    handleMenuClose("about");
+                  }}
+                  sx={{ color: "white" }}
+                >
+                  Trusted Sellers
+                </MenuItem>
+              </Menu>
+              <MenuItem
+                //onClick={() => scrollToSection("whyus")}
+
+                sx={{
+                  py: "6px",
+                  px: "12px",
+                }}
               >
                 <Typography
                   sx={{
@@ -105,11 +182,11 @@ function AppAppBar() {
                     fontFamily: '"Manrope", Helvetica',
                   }}
                 >
-                  Why us
+                  XPP Marketplace
                 </Typography>
               </MenuItem>
               <MenuItem
-                onClick={() => scrollToSection("products")}
+                //onClick={() => scrollToSection("products")}
                 sx={{ py: "6px", px: "12px" }}
               >
                 <Typography
@@ -119,23 +196,80 @@ function AppAppBar() {
                     fontFamily: '"Manrope", Helvetica',
                   }}
                 >
-                  Products
+                  How it works?
                 </Typography>
               </MenuItem>
               <MenuItem
-                onClick={() => scrollToSection("XPPToken")}
-                sx={{ py: "6px", px: "12px" }}
+                onClick={(event) => handleMenuOpen(event, "products")}
+                sx={{
+                  py: "6px",
+                  px: "12px",
+                  color: anchorElProducts ? "#FDC500" : "white",
+                }}
               >
                 <Typography
                   sx={{
                     fontSize: "16px",
-                    color: "white",
                     fontFamily: '"Manrope", Helvetica',
+                    display: "flex",
+                    alignItems: "center",
                   }}
                 >
-                  XPP Token
+                  Our Products
+                  <ArrowDropDownIcon sx={{ ml: 1 }} />
                 </Typography>
               </MenuItem>
+              <Menu
+                anchorEl={anchorElProducts}
+                open={Boolean(anchorElProducts)}
+                onClose={() => handleMenuClose("products")}
+                sx={{
+                  "& .MuiPaper-root": {
+                    bgcolor: "#0F1114",
+                    color: "white",
+                    borderColor: "#3f4143",
+                    borderStyle: "solid",
+                    borderWidth: "1px",
+                  },
+                }}
+              >
+                <MenuItem
+                  onClick={() => {
+                    scrollToSection("about-subsection1");
+                    handleMenuClose("products");
+                  }}
+                  sx={{ color: "white" }}
+                >
+                  XPPUSD Stablecoin
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    scrollToSection("about-subsection2");
+                    handleMenuClose("products");
+                  }}
+                  sx={{ color: "white" }}
+                >
+                  XPP Wallet
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    scrollToSection("about-subsection2");
+                    handleMenuClose("products");
+                  }}
+                  sx={{ color: "white" }}
+                >
+                  Cross-Border Payments
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    scrollToSection("about-subsection2");
+                    handleMenuClose("products");
+                  }}
+                  sx={{ color: "white" }}
+                >
+                  XPP Borderless Visa Business Card
+                </MenuItem>
+              </Menu>
               <MenuItem
                 onClick={() => scrollToSection("Joinus")}
                 sx={{ py: "6px", px: "12px" }}
@@ -200,59 +334,188 @@ function AppAppBar() {
                   }}
                 >
                   <MenuItem
-                    onClick={() => scrollToSection("about")}
-                    sx={{
-                      fontSize: "14px",
-                      color: "white",
-                      fontFamily: '"Manrope", Helvetica',
-                      fontWeight: 300,
-                    }}
+                    // onClick={() => scrollToSection("whyus")}
+                    sx={{ py: "6px", px: "12px" }}
                   >
-                    About
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        color: "white",
+                        fontFamily: '"Manrope", Helvetica',
+                      }}
+                    >
+                      Home
+                    </Typography>
                   </MenuItem>
                   <MenuItem
-                    onClick={() => scrollToSection("whyus")}
+                    onClick={(event) => handleMenuOpen(event, "about")}
                     sx={{
-                      fontSize: "14px",
-                      color: "white",
-                      fontFamily: '"Manrope", Helvetica',
-                      fontWeight: 300,
+                      py: "6px",
+                      px: "12px",
+                      color: anchorElAbout ? "#FDC500" : "white",
                     }}
                   >
-                    Why us
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        fontFamily: '"Manrope", Helvetica',
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      About us
+                      <ArrowDropDownIcon sx={{ ml: 1 }} />
+                    </Typography>
+                  </MenuItem>
+                  <Menu
+                    anchorEl={anchorElAbout}
+                    open={Boolean(anchorElAbout)}
+                    onClose={() => handleMenuClose("about")}
+                    sx={{
+                      "& .MuiPaper-root": {
+                        bgcolor: "#0F1114",
+                        color: "white",
+                        borderColor: "#3f4143",
+                        borderStyle: "solid",
+                        borderWidth: "1px",
+                      },
+                    }}
+                  >
+                    <MenuItem
+                      onClick={() => {
+                        scrollToSection("about-subsection1");
+                        handleMenuClose("about");
+                      }}
+                      sx={{ color: "white" }}
+                    >
+                      Our Company
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() => {
+                        scrollToSection("about-subsection2");
+                        handleMenuClose("about");
+                      }}
+                      sx={{ color: "white" }}
+                    >
+                      Trusted Sellers
+                    </MenuItem>
+                  </Menu>
+                  <MenuItem
+                    //onClick={() => scrollToSection("whyus")}
+
+                    sx={{
+                      py: "6px",
+                      px: "12px",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        color: "white",
+                        fontFamily: '"Manrope", Helvetica',
+                      }}
+                    >
+                      XPP Marketplace
+                    </Typography>
                   </MenuItem>
                   <MenuItem
-                    onClick={() => scrollToSection("products")}
-                    sx={{
-                      fontSize: "14px",
-                      color: "white",
-                      fontFamily: '"Manrope", Helvetica',
-                      fontWeight: 300,
-                    }}
+                    //onClick={() => scrollToSection("products")}
+                    sx={{ py: "6px", px: "12px" }}
                   >
-                    Products
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        color: "white",
+                        fontFamily: '"Manrope", Helvetica',
+                      }}
+                    >
+                      How it works?
+                    </Typography>
                   </MenuItem>
                   <MenuItem
-                    onClick={() => scrollToSection("XPPToken")}
+                    onClick={(event) => handleMenuOpen(event, "products")}
                     sx={{
-                      fontSize: "14px",
-                      color: "white",
-                      fontFamily: '"Manrope", Helvetica',
-                      fontWeight: 300,
+                      py: "6px",
+                      px: "12px",
+                      color: anchorElProducts ? "#FDC500" : "white",
                     }}
                   >
-                    XPP Token
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        fontFamily: '"Manrope", Helvetica',
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      Our Products
+                      <ArrowDropDownIcon sx={{ ml: 1 }} />
+                    </Typography>
                   </MenuItem>
+                  <Menu
+                    anchorEl={anchorElProducts}
+                    open={Boolean(anchorElProducts)}
+                    onClose={() => handleMenuClose("products")}
+                    sx={{
+                      "& .MuiPaper-root": {
+                        bgcolor: "#0F1114",
+                        color: "white",
+                        borderColor: "#3f4143",
+                        borderStyle: "solid",
+                        borderWidth: "1px",
+                      },
+                    }}
+                  >
+                    <MenuItem
+                      onClick={() => {
+                        scrollToSection("about-subsection1");
+                        handleMenuClose("products");
+                      }}
+                      sx={{ color: "white" }}
+                    >
+                      XPPUSD Stablecoin
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() => {
+                        scrollToSection("about-subsection2");
+                        handleMenuClose("products");
+                      }}
+                      sx={{ color: "white" }}
+                    >
+                      XPP Wallet
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() => {
+                        scrollToSection("about-subsection2");
+                        handleMenuClose("products");
+                      }}
+                      sx={{ color: "white" }}
+                    >
+                      Cross-Border Payments
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() => {
+                        scrollToSection("about-subsection2");
+                        handleMenuClose("products");
+                      }}
+                      sx={{ color: "white" }}
+                    >
+                      XPP Borderless Visa Business Card
+                    </MenuItem>
+                  </Menu>
                   <MenuItem
                     onClick={() => scrollToSection("Joinus")}
-                    sx={{
-                      fontSize: "14px",
-                      color: "white",
-                      fontFamily: '"Manrope", Helvetica',
-                      fontWeight: 300,
-                    }}
+                    sx={{ py: "6px", px: "12px" }}
                   >
-                    Join us
+                    <Typography
+                      sx={{
+                        fontSize: "16px",
+                        color: "white",
+                        fontFamily: '"Manrope", Helvetica',
+                      }}
+                    >
+                      Join us
+                    </Typography>
                   </MenuItem>
                   <Divider />
                   <MenuItem>

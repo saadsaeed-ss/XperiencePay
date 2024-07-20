@@ -115,7 +115,7 @@ function AppAppBar() {
                 </Typography>
               </MenuItem>
               <MenuItem
-                onClick={(event) => (window.location.href = "/about")}
+                onClick={(event) => handleMenuOpen(event, "about")}
                 sx={{
                   py: "6px",
                   px: "12px",
@@ -131,13 +131,7 @@ function AppAppBar() {
                   }}
                 >
                   About us
-                  <ArrowDropDownIcon
-                    sx={{ ml: 1 }}
-                    onClick={(event) => {
-                      event.stopPropagation();
-                      handleMenuOpen(event, "about");
-                    }}
-                  />
+                  <ArrowDropDownIcon sx={{ ml: 1 }} />
                 </Typography>
               </MenuItem>
               <Menu
@@ -353,7 +347,7 @@ function AppAppBar() {
                     </Typography>
                   </MenuItem>
                   <MenuItem
-                    onClick={(event) => (window.location.href = "/about")}
+                    onClick={(event) => handleMenuOpen(event, "about")}
                     sx={{
                       py: "6px",
                       px: "12px",
@@ -369,13 +363,7 @@ function AppAppBar() {
                       }}
                     >
                       About us
-                      <ArrowDropDownIcon
-                        sx={{ ml: 1 }}
-                        onClick={(event) => {
-                          event.stopPropagation();
-                          handleMenuOpen(event, "about");
-                        }}
-                      />
+                      <ArrowDropDownIcon sx={{ ml: 1 }} />
                     </Typography>
                   </MenuItem>
                   <Menu

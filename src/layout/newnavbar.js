@@ -130,7 +130,7 @@ function AppAppBar() {
                     alignItems: "center",
                   }}
                 >
-                  About us
+                  Company
                   <ArrowDropDownIcon sx={{ ml: 1 }} />
                 </Typography>
               </MenuItem>
@@ -155,7 +155,7 @@ function AppAppBar() {
                   }}
                   sx={{ color: "white" }}
                 >
-                  Our Company
+                  About
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
@@ -269,7 +269,7 @@ function AppAppBar() {
                   XPP Borderless Visa Business Card
                 </MenuItem>
               </Menu>
-              <MenuItem
+              {/*<MenuItem
                 onClick={() => scrollToSection("Joinus")}
                 sx={{ py: "6px", px: "12px" }}
               >
@@ -282,7 +282,7 @@ function AppAppBar() {
                 >
                   Join us
                 </Typography>
-              </MenuItem>
+              </MenuItem>*/}
             </Box>
             <Box
               sx={{
@@ -292,7 +292,7 @@ function AppAppBar() {
               }}
             >
               <Button
-                href="#"
+                href="https://zealy.io/cw/xperiencepay/questboard"
                 variant="contained"
                 size="medium"
                 sx={{
@@ -306,7 +306,7 @@ function AppAppBar() {
                   },
                 }}
               >
-                Join ICO
+                Join Airdrop
               </Button>
             </Box>
             <Box
@@ -501,7 +501,7 @@ function AppAppBar() {
                       XPP Borderless Visa Business Card
                     </MenuItem>
                   </Menu>
-                  <MenuItem
+                  {/* <MenuItem
                     onClick={() => scrollToSection("Joinus")}
                     sx={{ py: "6px", px: "12px" }}
                   >
@@ -514,11 +514,11 @@ function AppAppBar() {
                     >
                       Join us
                     </Typography>
-                  </MenuItem>
+                  </MenuItem>*/}
                   <Divider />
                   <MenuItem>
                     <Button
-                      href="#"
+                      href="https://zealy.io/cw/xperiencepay/questboard"
                       variant="contained"
                       size="medium"
                       sx={{
@@ -533,7 +533,7 @@ function AppAppBar() {
                         },
                       }}
                     >
-                      Join ICO
+                      Join Airdrop
                     </Button>
                   </MenuItem>
                 </Box>

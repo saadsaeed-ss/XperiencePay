@@ -102,7 +102,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="./marketplace"
             >
               XPP Web 3 Marketplace
             </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="./stablecoin"
             >
               XPP Stablecoin
             </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="./wallet"
             >
               XPP Wallet
             </Link>
@@ -132,7 +132,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="./cross-border-payments"
             >
               Cross-Border Payments
             </Link>
@@ -142,7 +142,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="./borderless-visa-business-card"
             >
               XPP Prepaid Borderless Visa Business Card
             </Link>
@@ -168,7 +168,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="https://xperiencepay.com/"
             >
               $XPP Token
             </Link>
@@ -178,11 +178,11 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="https://zealy.io/cw/xperiencepay/questboard"
             >
-              Join ICO
+              Join Aidrop
             </Link>
-            <Link
+            {/*<Link
               sx={{
                 color: "hsla(0, 0%, 100%, 0.8)",
                 textDecoration: "none",
@@ -191,7 +191,7 @@ export default function Footer() {
               href="#"
             >
               XPP Staking
-            </Link>
+            </Link>*/}
           </Box>
           <Box
             sx={{
@@ -234,7 +234,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="mailto:info@xperiencepay.com"
             >
               Contact Support
             </Link>

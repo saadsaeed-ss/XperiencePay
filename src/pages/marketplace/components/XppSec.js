@@ -61,7 +61,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
           </Typography>
 
           <a
-            href="#"
+            href="./about-us"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -86,7 +86,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
             />
           </a>
           <a
-            href="#"
+            href="mailto:info@xperiencepay.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{

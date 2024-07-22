@@ -50,7 +50,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
           </Typography>
 
           <a
-            href="#"
+            href="./stablecoin"
             target="_blank"
             rel="noopener noreferrer"
             style={{

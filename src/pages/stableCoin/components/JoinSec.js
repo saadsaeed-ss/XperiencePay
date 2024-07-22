@@ -50,7 +50,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
           </Typography>
 
           <a
-            href="#"
+            href="./marketplace"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -75,7 +75,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
             />
           </a>
           <a
-            href="#"
+            href="https://zealy.io/cw/xperiencepay/questboard"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -88,32 +88,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
               marginTop: "20px",
             }}
           >
-            Download XPP Wallet for iOS
-            <img
-              src={arrowForward}
-              style={{
-                width: "16px",
-                height: "16px",
-                marginLeft: "15px", // Adjust spacing as needed
-              }}
-              alt="Arrow Icon"
-            />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              fontWeight: 700,
-              fontFamily: '"Manrope", Helvetica',
-              color: "#FDC500",
-              textDecoration: "none",
-              marginTop: "20px",
-            }}
-          >
-            Download XPP Wallet for Android
+            Join XPP Airdrop
             <img
               src={arrowForward}
               style={{

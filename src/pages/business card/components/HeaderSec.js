@@ -53,7 +53,7 @@ const Header = () => {
                   lineHeight: 1.1,
                 }}
               >
-                XPP Borderless Visa Business Card
+                XPP Prepaid Borderless Visa Business Card
               </Typography>
               <Typography
                 gutterBottom
@@ -66,7 +66,7 @@ const Header = () => {
               >
                 Experience the freedom and flexibility of bridging the gap
                 between your cryptocurrency holdings and everyday spending with
-                the Xperience Pay Borderless Visa Business Card.  This
+                the Xperience Pay Prepaid Borderless Visa Business Card. This
                 innovative card empowers you to seamlessly convert your crypto
                 into spendable currency accepted worldwide at any merchant
                 displaying the Visa logo. Our card enables users to spend their

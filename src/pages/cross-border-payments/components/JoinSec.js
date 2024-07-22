@@ -59,32 +59,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
             Ready to experience the future of cross-border payments?
           </Typography>
           <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              fontWeight: 700,
-              fontFamily: '"Manrope", Helvetica',
-              color: "#FDC500",
-              textDecoration: "none",
-              marginTop: "30px",
-            }}
-          >
-            Download the XPP Wallet App
-            <img
-              src={arrowForward}
-              style={{
-                width: "16px",
-                height: "16px",
-                marginLeft: "15px", // Adjust spacing as needed
-              }}
-              alt="Arrow Icon"
-            />
-          </a>
-          <a
-            href="#"
+            href="./stablecoin"
             target="_blank"
             rel="noopener noreferrer"
             style={{

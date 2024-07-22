@@ -49,6 +49,7 @@ const XppSec = ({ imageWidth = "80%" }) => {
           </Typography>
 
           <Button
+            href="./marketplace"
             variant="contained"
             color="primary"
             size="medium"

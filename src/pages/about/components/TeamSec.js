@@ -4,7 +4,7 @@ import LinkedIn from "../../../assets/linkedin.svg";
 import Team05 from "../../../assets/team05.png";
 import Asad from "../../../assets/asad.png";
 import Saad from "../../../assets/saad.jpg";
-import Mahnoor from "../../../assets/mahnoor.jpg";
+import Mahnoor from "../../../assets/mahnoor.png";
 import Mary from "../../../assets/mary.jpg";
 
 //
@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Asad Ali Akbar",
     role: "Business Development Manager",
     img: Asad,
-    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+    linkedin: "https://www.linkedin.com/in/asad-ali-a78692212",
   },
   {
     name: "Saad Saeed",
@@ -33,13 +33,13 @@ const teamMembers = [
     name: "Mahnoor Maqsood",
     role: "Design Lead",
     img: Mahnoor,
-    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+    linkedin: "https://www.linkedin.com/in/mahnoor-maqsood-76157020b/",
   },
   {
     name: "Mary",
     role: "Marketing Head",
     img: Mary,
-    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+    linkedin: "",
   },
 ];
 
@@ -74,7 +74,7 @@ const TeamSec = () => {
         <Typography
           sx={{
             fontFamily: '"Manrope", Helvetica',
-            fontSize: "18px",
+            fontSize: { xs: "12px", md: "16px" },
             marginBottom: "100px",
           }}
         >

@@ -125,7 +125,7 @@ const Header = () => {
             <Box>
               <div style={{ display: "flex", gap: "10px" }}>
                 <Button
-                  href="#"
+                  href="./about-us"
                   variant="contained"
                   size="medium"
                   sx={{
@@ -139,7 +139,7 @@ const Header = () => {
                     },
                   }}
                 >
-                  Launch Marketplace
+                  About us
                 </Button>
                 <Button
                   variant="outlined"
@@ -161,7 +161,7 @@ const Header = () => {
                 </Button>
               </div>
               <br />
-              <div style={{ display: "flex", gap: "10px" }}>
+              {/*<div style={{ display: "flex", gap: "10px" }}>
                 <Button
                   variant="outlined"
                   size="medium"
@@ -202,7 +202,7 @@ const Header = () => {
                   Copy Contract Address
                   <ContentCopyIcon fontSize="small" sx={{ ml: 1 }} />
                 </Button>
-              </div>
+              </div>*/}
             </Box>
           </Box>
           <Box

@@ -114,7 +114,7 @@ const TokenSection = () => {
         <Box>
           <Stack direction="row" justifyContent="center" spacing={2}>
             <Button
-              href="#"
+              href="https://zealy.io/cw/xperiencepay/questboard"
               variant="contained"
               size="medium"
               sx={{
@@ -128,10 +128,10 @@ const TokenSection = () => {
                 },
               }}
             >
-              Join ICO
+              Join Airdrop
             </Button>
             <Button
-              href="https://drive.google.com/file/d/1DvAAqwX3fHQX8tOkstGw51A3Zl5UcP91/view?usp=sharing"
+              href="https://drive.google.com/file/d/16MkyMl1dHc4fJocR2j98WtLrIyqoxzlX/view"
               variant="outlined"
               size="medium"
               sx={{

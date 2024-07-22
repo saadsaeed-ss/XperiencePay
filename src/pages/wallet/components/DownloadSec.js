@@ -46,7 +46,7 @@ const DownloadSec = ({ imageWidth = "100%" }) => {
               fontSize: "1.6rem",
             }}
           >
-            Download the XPP Wallet App Today!
+            Download the XPP Wallet App!
           </Typography>
           <Typography
             sx={{
@@ -60,7 +60,6 @@ const DownloadSec = ({ imageWidth = "100%" }) => {
             Download the app today and unlock a world of possibilities:
           </Typography>
           <a
-            href="#"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -73,41 +72,7 @@ const DownloadSec = ({ imageWidth = "100%" }) => {
               marginTop: "30px",
             }}
           >
-            Download for iOS
-            <img
-              src={arrowForward}
-              style={{
-                width: "16px",
-                height: "16px",
-                marginLeft: "15px", // Adjust spacing as needed
-              }}
-              alt="Arrow Icon"
-            />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              fontWeight: 700,
-              fontFamily: '"Manrope", Helvetica',
-              color: "#FDC500",
-              textDecoration: "none",
-              marginTop: "20px",
-            }}
-          >
-            Download for Android
-            <img
-              src={arrowForward}
-              style={{
-                width: "16px",
-                height: "16px",
-                marginLeft: "15px", // Adjust spacing as needed
-              }}
-              alt="Arrow Icon"
-            />
+            Wallet Cooming Soon!!
           </a>
         </Box>
         <Box

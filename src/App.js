@@ -8,6 +8,7 @@ import WorksPage from "./pages/works/works";
 import Marketplace from "./pages/marketplace/marketplace";
 import StableCoin from "./pages/stableCoin/stableCoin";
 import Wallet from "./pages/wallet/wallet";
+import CrossBorderPayments from "./pages/cross-border-payments/crossBorderPayments";
 //
 //
 //
@@ -24,6 +25,10 @@ function App() {
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/stablecoin" element={<StableCoin />} />
           <Route path="/wallet" element={<Wallet />} />
+          <Route
+            path="/cross-border-payments"
+            element={<CrossBorderPayments />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

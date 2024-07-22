@@ -1,14 +1,44 @@
 import React from "react";
 import { Container, Box, Typography, Avatar } from "@mui/material";
 import LinkedIn from "../../../assets/linkedin.svg";
-
 import Team05 from "../../../assets/team05.png";
+import Asad from "../../../assets/asad.png";
+import Saad from "../../../assets/saad.jpg";
+import Mahnoor from "../../../assets/mahnoor.jpg";
+import Mary from "../../../assets/mary.jpg";
 
+//
+//
+//
 const teamMembers = [
   {
     name: "CHRISTOPHE TAPA",
     role: "Founder and CEO",
     img: Team05,
+    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+  },
+  {
+    name: "Asad Ali Akbar",
+    role: "Business Development Manager",
+    img: Asad,
+    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+  },
+  {
+    name: "Saad Saeed",
+    role: "Front-End Engineer",
+    img: Saad,
+    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+  },
+  {
+    name: "Mahnoor Maqsood",
+    role: "Design Lead",
+    img: Mahnoor,
+    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+  },
+  {
+    name: "Mary",
+    role: "Marketing Head",
+    img: Mary,
     linkedin: "https://www.linkedin.com/in/christophe-tapa/",
   },
 ];
@@ -70,7 +100,7 @@ const TeamSec = () => {
               width: {
                 xs: "100%",
                 sm: "44%",
-                md: "20%",
+                md: "22%",
               },
               textAlign: "center",
               position: "relative",

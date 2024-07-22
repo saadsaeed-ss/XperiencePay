@@ -150,7 +150,7 @@ function AppAppBar() {
               >
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/our-company";
+                    window.location.href = "/about-us";
                     handleMenuClose("about");
                   }}
                   sx={{ color: "white" }}
@@ -252,7 +252,7 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    scrollToSection("about-subsection2");
+                    window.location.href = "/cross-border-payments";
                     handleMenuClose("products");
                   }}
                   sx={{ color: "white" }}
@@ -261,7 +261,7 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    scrollToSection("about-subsection2");
+                    window.location.href = "/borderless-visa-business-card";
                     handleMenuClose("products");
                   }}
                   sx={{ color: "white" }}
@@ -382,12 +382,12 @@ function AppAppBar() {
                   >
                     <MenuItem
                       onClick={() => {
-                        window.location.href = "/our-company";
+                        window.location.href = "/about-us";
                         handleMenuClose("about");
                       }}
                       sx={{ color: "white" }}
                     >
-                      Our Company
+                      Company
                     </MenuItem>
                     <MenuItem
                       onClick={() => {

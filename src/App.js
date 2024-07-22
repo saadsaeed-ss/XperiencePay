@@ -9,6 +9,7 @@ import Marketplace from "./pages/marketplace/marketplace";
 import StableCoin from "./pages/stableCoin/stableCoin";
 import Wallet from "./pages/wallet/wallet";
 import CrossBorderPayments from "./pages/cross-border-payments/crossBorderPayments";
+import BusinessCard from "./pages/business card/businessCard";
 //
 //
 //
@@ -19,7 +20,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} /> For making URL/home change.
-          <Route path="/our-company" element={<About />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/trusted-seller" element={<TrustedSellerPage />} />
           <Route path="/works" element={<WorksPage />} />
           <Route path="/marketplace" element={<Marketplace />} />
@@ -28,6 +29,10 @@ function App() {
           <Route
             path="/cross-border-payments"
             element={<CrossBorderPayments />}
+          />
+          <Route
+            path="/borderless-visa-business-card"
+            element={<BusinessCard />}
           />
         </Routes>
       </BrowserRouter>

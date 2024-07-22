@@ -362,7 +362,7 @@ function AppAppBar() {
                         alignItems: "center",
                       }}
                     >
-                      About us
+                      Company
                       <ArrowDropDownIcon sx={{ ml: 1 }} />
                     </Typography>
                   </MenuItem>
@@ -387,7 +387,7 @@ function AppAppBar() {
                       }}
                       sx={{ color: "white" }}
                     >
-                      Company
+                      About
                     </MenuItem>
                     <MenuItem
                       onClick={() => {

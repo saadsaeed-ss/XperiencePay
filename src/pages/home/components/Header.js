@@ -419,7 +419,7 @@ const Header = () => {
                       Start completing quests and claiming rewards.
                     </Typography>
                     <Button
-                      href="#"
+                      href="https://zealy.io/cw/xperiencepay/questboard"
                       variant="contained"
                       size="medium"
                       sx={{

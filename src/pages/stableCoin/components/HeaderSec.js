@@ -7,7 +7,7 @@ const Header = () => {
     <Box
       sx={{
         mt: 5,
-        padding: "32px 0 0 0",
+        padding: "75px 0 0 0",
       }}
     >
       <Container

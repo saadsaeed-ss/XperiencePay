@@ -58,7 +58,7 @@ const Header = () => {
     <Box
       sx={{
         mt: 10,
-        py: 4,
+        padding: "75px 0 0 0",
         backgroundImage: `url(${HeaderBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",

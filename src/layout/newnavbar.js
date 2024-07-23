@@ -92,12 +92,9 @@ function AppAppBar() {
                 px: 0,
               }}
             >
-              <img
-                src={Logo}
-                style={logoStyle}
-                alt="logo of Xperience Pay"
-                href="http://www.xperiencepay.com/"
-              />
+              <a href="/">
+                <img src={Logo} style={logoStyle} alt="logo of Xperience Pay" />
+              </a>
             </Box>
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
               <MenuItem

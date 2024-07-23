@@ -27,7 +27,7 @@ const teamMembers = [
     name: "Saad Saeed",
     role: "Front-End Engineer",
     img: Saad,
-    linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+    linkedin: "https://www.linkedin.com/in/saad-saeed-49b1ab158/",
   },
   {
     name: "Mahnoor Maqsood",

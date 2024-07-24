@@ -8,12 +8,62 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+// Real Estate
 import SothebysLogo from "../assets/sothebys.png";
 import EmiratesLogo from "../assets/Emirates.png";
 import ChristiesLogo from "../assets/Christies.png";
 import PropertyShareLogo from "../assets/Property.png";
 import ZillowLogo from "../assets/zillow.png";
 import CrexiLogo from "../assets/crexi.png";
+
+//
+//
+// Precious Metals
+import AgeLogo from "../assets/age.png";
+import BeLogo from "../assets/be1.png";
+import TimeLogo from "../assets/time.png";
+import ApLogo from "../assets/ap.png";
+import RolexLogo from "../assets/rolex.png";
+
+//
+//
+// Luxury & Exotic Cars
+import MmcLogo from "../assets/mmc.png";
+import RrLogo from "../assets/rr.jpg";
+import EpLogo from "../assets/ep.jpg";
+import LacLogo from "../assets/lac.jpg";
+import DlcLogo from "../assets/dlc.png";
+
+//
+//
+// Luxury Yachts
+import BoatLogo from "../assets/boat.png";
+import CniLogo from "../assets/cni.jpg";
+import CabelLogo from "../assets/cabel.png";
+
+//
+//
+// Aviation
+import CieloLogo from "../assets/cielo.png";
+import JetLogo from "../assets/jet.jpg";
+import SimJetLogo from "../assets/simjet.jpg";
+
+//
+//
+// Hospitality
+import HotelLogo from "../assets/hotel.jpg";
+import LodLogo from "../assets/lod.jpg";
+import TheDLogo from "../assets/theD.jpg";
+
+//
+//
+// Manufacturing
+import lsegLogo from "../assets/lseg.jpg";
+import TradeLogo from "../assets/trade.jpg";
+
+//
+//
+//
 
 const tabs = [
   "Real Estate",
@@ -31,26 +81,15 @@ const logos = {
     EmiratesLogo,
     ChristiesLogo,
     PropertyShareLogo,
-
+    ZillowLogo,
     CrexiLogo,
   ],
-  "Precious Metals": [
-    SothebysLogo,
-    EmiratesLogo,
-    ChristiesLogo,
-    PropertyShareLogo,
-  ],
-  "Luxury & Exotic Cars": [
-    SothebysLogo,
-    EmiratesLogo,
-    ChristiesLogo,
-    PropertyShareLogo,
-    ZillowLogo,
-  ],
-  "Luxury Yachts": [],
-  Aviation: [],
-  Hospitality: [],
-  Manufacturing: [],
+  "Precious Metals": [AgeLogo, BeLogo, TimeLogo, ApLogo, RolexLogo],
+  "Luxury & Exotic Cars": [MmcLogo, RrLogo, EpLogo, LacLogo, DlcLogo],
+  "Luxury Yachts": [BoatLogo, CniLogo, CabelLogo],
+  Aviation: [CieloLogo, JetLogo, SimJetLogo],
+  Hospitality: [HotelLogo, LodLogo, TheDLogo],
+  Manufacturing: [lsegLogo, TradeLogo],
 };
 
 const TabsSec = () => {
@@ -70,6 +109,7 @@ const TabsSec = () => {
         color: "#fff",
         fontFamily: '"Manrope", Helvetica',
         padding: "50px 0px 50px 50px",
+        marginBottom: "150px",
         flexDirection: isMediumOrSmall ? "column" : "row",
       }}
     >
@@ -114,7 +154,7 @@ const TabsSec = () => {
               key={index}
               sx={{
                 width: { xs: "100%", sm: "50%", md: "50%", lg: "25%" }, // Responsive widths
-                height: "150px",
+                height: "175px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -125,7 +165,7 @@ const TabsSec = () => {
               <img
                 src={logo}
                 alt="logo"
-                style={{ maxWidth: "100%", maxHeight: "100%" }}
+                style={{ maxWidth: "80%", maxHeight: "100%" }}
               />
             </Box>
           ))}

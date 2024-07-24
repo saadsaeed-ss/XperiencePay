@@ -4,7 +4,7 @@ import FeatureSec from "./components/FeatureSec";
 import JoinSellerProgram from "./components/JoinSellerProgram";
 import TabsSec from "../../layout/tabsSec";
 import Footer from "../../layout/footer";
-import { Tab } from "@mui/material";
+
 import { Helmet } from "react-helmet";
 import AppAppBar from "../../layout/newnavbar";
 //

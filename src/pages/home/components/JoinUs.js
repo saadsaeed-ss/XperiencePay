@@ -1,27 +1,23 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import {
   Container,
-  Grid,
   Typography,
   Box,
   TextField,
   Button,
-  Link,
-  IconButton,
   Stack,
-  SvgIcon,
 } from "@mui/material";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import XIcon from "@mui/icons-material/X";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import DiscordIcon from "../../../assets/discord_fill.svg";
-
 import {
   createTheme,
   ThemeProvider,
   responsiveFontSizes,
 } from "@mui/material/styles";
+import DiscordIcon from "../../../assets/discord_fill.svg";
 
 const theme = responsiveFontSizes(
   createTheme({
@@ -54,6 +50,73 @@ const theme = responsiveFontSizes(
 );
 
 const SubscriptionSection = () => {
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const validateEmail = (email) => {
+    // Check for valid email format using regex
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email)) {
+      return "Please enter a valid email address.";
+    }
+
+    // Check for valid domain
+    const domainRegex = /@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    const domainMatch = email.match(domainRegex);
+    if (!domainMatch) {
+      return "Email domain is invalid.";
+    }
+
+    // Check for illegal characters
+    const illegalChars = /[()<>[\]{}\\]/;
+    if (illegalChars.test(email)) {
+      return "Email contains illegal characters.";
+    }
+
+    return ""; // Return an empty string if all validations pass
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const validationError = validateEmail(email);
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+    setError(""); // Clear any previous errors
+
+    // Your EmailJS service ID, template ID, and Public Key
+    const serviceId = process.env.REACT_APP_ServiceId;
+    const templateId = process.env.REACT_APP_TemplateId;
+    const publicKey = process.env.REACT_APP_PublicKey;
+
+    // Create an object with EmailJS service ID, template ID, Public Key, and Template params
+    const data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: {
+        from_email: email,
+        from_name: "Xperience Pay", // Change this to your website name
+        to_name: "Chris", // This could be your name or the recipient's name
+      },
+    };
+
+    // Send the email using EmailJS
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
+      console.log(res.data);
+      setEmail("");
+      setIsSubmitted(true); // Set confirmation message state to true
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Container
@@ -110,46 +173,78 @@ const SubscriptionSection = () => {
               our ecosystem today and open up a world of possibilities.
             </Typography>
           </Box>
-          <Stack direction="row" spacing={1} useFlexGap>
-            <TextField
+          <form onSubmit={handleSubmit} className="emailForm">
+            <Stack direction="row" spacing={1} useFlexGap>
+              <TextField
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                sx={{
+                  maxWidth: { xs: "100%", md: "100%" },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#4e4e4e",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: "hsla(47, 100%, 50%, 1)",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#fdc500",
+                    },
+                  },
+                }}
+                hiddenLabel
+                size="small"
+                variant="outlined"
+                aria-label="Enter your email address"
+                inputProps={{
+                  autoComplete: "off",
+                }}
+              />
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                size="medium"
+                sx={{
+                  fontWeight: 500,
+                  textTransform: "none",
+                  "&:hover": {
+                    backgroundColor: "#e6b300",
+                  },
+                }}
+              >
+                Send It.
+              </Button>
+            </Stack>
+          </form>
+          {error && (
+            <Typography
+              variant="body1"
               sx={{
-                maxWidth: { xs: "100%", md: "70%" },
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#4e4e4e",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "hsla(47, 100%, 50%, 1)",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "#fdc500",
-                  },
-                },
-              }}
-              hiddenLabel
-              size="small"
-              variant="outlined"
-              aria-label="Enter your email address"
-              placeholder="Your email address"
-              inputProps={{
-                autoComplete: "off",
-              }}
-            />
-            <Button
-              variant="contained"
-              color="primary"
-              size="medium"
-              sx={{
-                fontWeight: 500,
-                textTransform: "none",
-                "&:hover": {
-                  backgroundColor: "#e6b300",
-                },
+                marginTop: 2,
+                color: "red",
+                fontFamily: '"Manrope", Helvetica',
+                fontWeight: 300,
               }}
             >
-              Subscribe
-            </Button>
-          </Stack>
+              {error}
+            </Typography>
+          )}
+          {isSubmitted && (
+            <Typography
+              variant="body1"
+              sx={{
+                marginTop: 2,
+                color: "#FDC500",
+                fontFamily: '"Manrope", Helvetica',
+                fontWeight: 300,
+              }}
+            >
+              Thank you! Your email has been submitted.
+            </Typography>
+          )}
         </Box>
 
         <Box

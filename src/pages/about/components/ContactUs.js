@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import {
   Container,
@@ -52,41 +53,74 @@ const theme = responsiveFontSizes(
 );
 
 const ContactUsSec = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const validateEmail = (email) => {
+    // Check for valid email format using regex
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email)) {
+      return "Please enter a valid email address.";
+    }
+
+    // Check for valid domain
+    const domainRegex = /@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    const domainMatch = email.match(domainRegex);
+    if (!domainMatch) {
+      return "Email domain is invalid.";
+    }
+
+    // Check for illegal characters
+    const illegalChars = /[()<>[\]{}\\]/;
+    if (illegalChars.test(email)) {
+      return "Email contains illegal characters.";
+    }
+
+    return ""; // Return an empty string if all validations pass
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const validationError = validateEmail(email);
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+    setError(""); // Clear any previous errors
 
-    // Mock email sending process
-    setTimeout(() => {
-      setMessage("Your email has been sent!");
-    }, 1000);
+    // Your EmailJS service ID, template ID, and Public Key
+    const serviceId = process.env.REACT_APP_ServiceId;
+    const templateId = process.env.REACT_APP_ContactTemplateId;
+    const publicKey = process.env.REACT_APP_PublicKey;
 
-    // In a real application, you would send a request to your backend here
-    // fetch('/api/sendEmail', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(formData),
-    // }).then(response => response.json())
-    //   .then(data => {
-    //     setMessage("Your email has been sent!");
-    //   }).catch(error => {
-    //     setMessage("An error occurred. Please try again later.");
-    //   });
+    // Create an object with EmailJS service ID, template ID, Public Key, and Template params
+    const data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: {
+        from_name: name,
+        from_email: email,
+        to_name: "Xperience Pay",
+        message: message,
+      },
+    };
+
+    // Send the email using EmailJS
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
+      console.log(res.data);
+      setEmail("");
+      setIsSubmitted(true); // Set confirmation message state to true
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -140,124 +174,132 @@ const ContactUsSec = () => {
               Get in touch with our team to learn more about XPP.
             </Typography>
           </Box>
-          <Stack
-            component="form"
-            direction="column"
-            spacing={2}
-            useFlexGap
+          <form
             onSubmit={handleSubmit}
-            width={"100%"}
+            className="emailForm"
+            style={{ width: "100%" }}
           >
-            <TextField
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              sx={{
-                maxWidth: "100%",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#4e4e4e",
+            <Stack direction="column" spacing={2} useFlexGap>
+              <TextField
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#4e4e4e",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: "hsla(47, 100%, 50%, 1)",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#fdc500",
+                    },
                   },
-                  "&:hover fieldset": {
-                    borderColor: "hsla(47, 100%, 50%, 1)",
+                }}
+                hiddenLabel
+                size="small"
+                variant="outlined"
+                aria-label="Enter your name"
+                inputProps={{
+                  autoComplete: "off",
+                }}
+              />
+              <TextField
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#4e4e4e",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: "hsla(47, 100%, 50%, 1)",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#fdc500",
+                    },
                   },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "#fdc500",
+                }}
+                hiddenLabel
+                size="small"
+                variant="outlined"
+                aria-label="Enter your email address"
+                inputProps={{
+                  autoComplete: "off",
+                }}
+              />
+              <TextField
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#4e4e4e",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: "hsla(47, 100%, 50%, 1)",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#fdc500",
+                    },
                   },
-                },
-              }}
-              hiddenLabel
-              size="small"
-              variant="outlined"
-              aria-label="Enter your name"
-              placeholder="Your name"
-              inputProps={{
-                autoComplete: "off",
-              }}
-            />
-            <TextField
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              sx={{
-                maxWidth: "100%",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#4e4e4e",
+                }}
+                hiddenLabel
+                size="small"
+                variant="outlined"
+                aria-label="Enter your message"
+                placeholder="Your message"
+                multiline
+                rows={4}
+                inputProps={{
+                  autoComplete: "off",
+                }}
+              />
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                size="medium"
+                sx={{
+                  fontWeight: 500,
+                  textTransform: "none",
+                  "&:hover": {
+                    backgroundColor: "#e6b300",
                   },
-                  "&:hover fieldset": {
-                    borderColor: "hsla(47, 100%, 50%, 1)",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "#fdc500",
-                  },
-                },
-              }}
-              hiddenLabel
-              size="small"
-              variant="outlined"
-              aria-label="Enter your email address"
-              placeholder="Your email address"
-              inputProps={{
-                autoComplete: "off",
-              }}
-            />
-            <TextField
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              sx={{
-                maxWidth: "100%",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#4e4e4e",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "hsla(47, 100%, 50%, 1)",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "#fdc500",
-                  },
-                },
-              }}
-              hiddenLabel
-              size="small"
-              variant="outlined"
-              aria-label="Enter your message"
-              placeholder="Your message"
-              multiline
-              rows={4}
-              inputProps={{
-                autoComplete: "off",
-              }}
-            />
-            <Button
-              type="submit"
-              variant="contained"
-              color="primary"
-              size="medium"
-              sx={{
-                fontWeight: 500,
-                textTransform: "none",
-                "&:hover": {
-                  backgroundColor: "#e6b300",
-                },
-              }}
-            >
-              Submit
-            </Button>
-          </Stack>
-          {message && (
+                }}
+              >
+                Send It.
+              </Button>
+            </Stack>
+          </form>
+          {error && (
             <Typography
+              variant="body1"
               sx={{
-                mt: 2,
-                color: "#FDC500",
-                fontSize: "16px",
+                marginTop: 2,
+                color: "red",
                 fontFamily: '"Manrope", Helvetica',
-                fontWeight: 500,
+                fontWeight: 300,
               }}
             >
-              {message}
+              {error}
+            </Typography>
+          )}
+          {isSubmitted && (
+            <Typography
+              variant="body1"
+              sx={{
+                marginTop: 2,
+                color: "#FDC500",
+                fontFamily: '"Manrope", Helvetica',
+                fontWeight: 300,
+              }}
+            >
+              Thank you! Your email has been submitted.
             </Typography>
           )}
         </Box>

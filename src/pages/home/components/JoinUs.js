@@ -98,8 +98,8 @@ const SubscriptionSection = () => {
       user_id: publicKey,
       template_params: {
         from_email: email,
-        from_name: "Xperience Pay", // Change this to your website name
-        to_name: "Chris", // This could be your name or the recipient's name
+        from_name: "Xperience Pay",
+        to_name: "Chris",
       },
     };
 

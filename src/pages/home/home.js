@@ -1,6 +1,5 @@
 import React from "react";
 import About from "./components/About";
-// import "./App.css";
 import Counter from "./components/Counter";
 import Services from "./components/Services";
 import HeaderText from "./components/HeaderText";
@@ -8,7 +7,6 @@ import OfferSec from "./components/Offer";
 import CardSection from "./components/CardSec";
 import EscrowSection from "./components/EscrowSection";
 import JoinSellerProgram from "./components/JoinSellerPRogram";
-// import TabsSec from "../../layout/tabsSec";
 import Header from "./components/Header";
 import TokenSection from "./components/Tokensection";
 import SubscriptionSection from "./components/JoinUs";
@@ -30,7 +28,6 @@ function HomePage() {
       <CardSection />
       <EscrowSection />
       <JoinSellerProgram />
-      {/* <TabsSec /> */}
       <TokenSection id="XPPToken" />
       <SubscriptionSection id="Joinus" />
       <Footer />

@@ -73,6 +73,7 @@ const Header = () => {
       >
         <Box
           display="flex"
+          gap="20px"
           flexDirection={{ xs: "column", md: "row" }}
           justifyContent="space-between"
           alignItems="center"
@@ -98,6 +99,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -106,7 +108,7 @@ const Header = () => {
                   lineHeight: 1.1,
                 }}
               >
-                Experience the Future of Finance with Xperience Pay
+                Secure Crypto-Based Purchases with Xperience Pay
               </Typography>
               <Typography
                 gutterBottom
@@ -118,8 +120,8 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "80%" },
                 }}
               >
-                Xperience Pay (XPP) empowers you to seamlessly buy, sell, and
-                manage RWAs on our secure, user-friendly WEB3 marketplace.
+                Xperience Pay (XPP) is offering a secure, user-friendly WEB3
+                marketplace to help you buy, sell, and manage RWAs seamlessly.
               </Typography>
             </Box>
             <Box>
@@ -687,6 +689,7 @@ const Header = () => {
         }}
       >
         <Typography
+          variant="body"
           sx={{
             fontSize: { xs: "16px", md: "20px" },
             fontFamily: '"Manrope", Helvetica',

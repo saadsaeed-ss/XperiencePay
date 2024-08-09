@@ -11,27 +11,27 @@ const BuyersSection = () => {
     {
       title: "Detailed Asset Listings",
       description:
-        "Make informed decisions with comprehensive information, including high-quality photos, detailed descriptions, and key metrics for each RWA.",
+        "Find out all you require to make informed decisions. This includes top-notch photos, full descriptions, and key metrics for each RWA.",
     },
     {
       title: "Seamless Acquisition Process",
       description:
-        "Effortlessly acquire RWAs using your XPPUSD stablecoin or other supported cryptocurrencies within the secure Xperience Pay ecosystem.",
+        "Buy RWAs without a hitch using your XPPUSD stablecoin or other accepted cryptocurrencies in the safe Xperience Pay ecosystem.",
     },
     {
       title: "Secure Transactions",
       description:
-        "Enjoy peace of mind knowing all transactions are facilitated through secure smart contracts on the blockchain, eliminating intermediaries and reducing the risk of fraud.",
+        "Rest easy knowing blockchain smart contracts handle all deals. This eliminates middlemen and reduces the possibility of fraud.",
     },
     {
       title: "Unparalleled Selection of RWAs",
       description:
-        "Explore a meticulously chosen collection of RWAs, carefully selected to cater to your specific preferences.",
+        "Get a hold of our carefully picked selection of Real World Assets (RWAs) chosen to match what you are interested in.",
     },
     {
       title: "Track Your Portfolio",
       description:
-        "Monitor your crypto holdings conveniently within your XPP Wallet, keeping a watchful eye on their performance and value.",
+        "Watch your crypto holdings easily in your XPP Wallet. This lets you stay updated on how they're doing and what they're worth.",
     },
   ];
 
@@ -88,8 +88,7 @@ const BuyersSection = () => {
             }}
           >
             <Typography
-              variant={item.isTitle ? "h4" : "h6"}
-              component={item.isTitle ? "h2" : "h3"}
+              variant={item.isTitle ? "h4" : "h5"}
               sx={{
                 fontSize: item.isTitle ? "36px" : "20px",
                 fontWeight: item.isTitle ? "700" : "600",

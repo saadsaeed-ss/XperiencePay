@@ -93,8 +93,7 @@ const OfferingSec = () => {
         }}
       >
         <Typography
-          variant="h4"
-          component="h2"
+          variant="h3"
           sx={{
             fontSize: "30px",
             fontWeight: "700",
@@ -103,7 +102,7 @@ const OfferingSec = () => {
             marginBottom: "20px",
           }}
         >
-          Our Offerings
+          What We Offer
         </Typography>
         <Typography
           sx={{
@@ -112,8 +111,8 @@ const OfferingSec = () => {
             marginBottom: "100px",
           }}
         >
-          Xperience Pay WEB3 Marketplace boasts a diverse selection of RWAs,
-          catering to a wide range of interests and investment goals. 
+          Xperience Pay WEB3 Marketplace has many different real-world assets.
+          These can match a wide range of interests and investment goals.
         </Typography>
       </Box>
 

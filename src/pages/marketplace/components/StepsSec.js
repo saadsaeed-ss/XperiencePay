@@ -44,6 +44,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "18px", md: "24px" },
                 fontWeight: "bold",
@@ -52,7 +53,7 @@ const StepsSec = () => {
                 lineHeight: 1.3,
               }}
             >
-              Empowering Transactions with Smart Contracts
+              Secure transactions with smart contracts
             </Typography>
           </Box>
           <Box
@@ -75,12 +76,13 @@ const StepsSec = () => {
                 color: "white",
               }}
             >
-              At the heart of our marketplace lies the utilization of smart
-              contracts. These self-executing agreements automate and enforce
-              transaction terms, eliminating the need for intermediaries and
-              reducing the risk of fraud or non-compliance. With smart
-              contracts, transactions are executed transparently, efficiently,
-              and securely, fostering trust among transacting parties.
+              The heart of our marketplace is the use of smart contracts. These
+              self-executing contracts would be programmed to record terms and
+              automatically carry out those transactions without the reliance on
+              intermediaries (parties in a contractual relationship) reducing
+              the risk of fraud or non-compliance. Smart contracts ensure that
+              the transactions are executed transparently, quickly, and safely
+              by disclosing each other part of the deals-making trust.
             </Typography>
           </Box>
         </Box>
@@ -126,6 +128,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "18px", md: "24px" },
                 fontWeight: "bold",
@@ -157,13 +160,12 @@ const StepsSec = () => {
                 color: "white",
               }}
             >
-              In addition to smart contracts, we integrate escrow accounts into
-              our platform to provide an extra layer of security and protection
-              for users. Escrow accounts hold funds in trust until predetermined
-              conditions are met, ensuring that both buyers and sellers fulfill
-              their obligations. This mitigates the risk of financial loss or
-              dispute, instilling confidence, and peace of mind for all parties
-              involved.
+              We also provide escrow accounts on our platform, to give you an
+              extra layer of security and protection over the blockchain. Our
+              escrow account is a way to hold funds in trust pending fulfillment
+              of pre-established terms by both buyer and seller. This also helps
+              to prevent financial risk or dispute and guarantees satisfaction
+              and trust for both parties.
             </Typography>
           </Box>
         </Box>
@@ -209,6 +211,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "18px", md: "24px" },
                 fontWeight: "bold",
@@ -217,7 +220,7 @@ const StepsSec = () => {
                 lineHeight: 1.3,
               }}
             >
-              Trusted Partnerships for Quality Assurance
+              Trusted Partnerships to Ensure Quality
             </Typography>
           </Box>
           <Box
@@ -240,14 +243,16 @@ const StepsSec = () => {
                 color: "white",
               }}
             >
-              We believe in creating a trusted and quality-centered marketplace,
-              which is why we've forged strategic partnerships with reputable
-              vendors worldwide. Our partners undergo a meticulous attestation
-              process to ensure they meet our high standards, empowering buyers
-              with the confidence to interact with reputable sellers. With over
-              55 initial partners boasting a combined Gross Merchandise Value
-              (GMV) of USD 23 billion, our ecosystem offers a diverse selection
-              of RWAs to cater to every interest and investment goal.
+              We aim to build a marketplace that people trust and that focuses
+              on quality. That's why we've teamed up with well-known vendors
+              from all over the world. To ensure they live up to our high
+              standards, our partners go through a meticulous verification
+              process. This gives buyers peace of mind when they deal with
+              sellers. We've started with over 55 partners who together have
+              sold goods having a combined Gross Merchandise Value (GMV) of USD
+              23 billion. Our ecosystem offers many different types of
+              real-world assets to suit all kinds of interests and investment
+              goals all through crypto-based purchases.
             </Typography>
           </Box>
         </Box>

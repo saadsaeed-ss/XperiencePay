@@ -46,6 +46,7 @@ const Header = () => {
               >
                 <Typography
                   gutterBottom
+                  variant="h1"
                   sx={{
                     fontSize: { xs: "48px", md: "64px" },
                     fontWeight: "bold",
@@ -64,12 +65,13 @@ const Header = () => {
                     maxWidth: { xs: "100%", md: "100%" },
                   }}
                 >
-                  The Xperience Pay WEB3 Marketplace is your gateway to a
-                  dynamic world of real-world assets (RWAs). We are breaking
-                  down barriers and empowering individuals globally to
-                  participate in a curated selection of high-value RWAs using
-                  cryptocurrency. Xperience Pay offers a seamless experience
-                  that prioritizes trust, security, and efficiency.
+                  Xperience Pay web3 marketplace offers access to a constantly
+                  evolving world of real-world assets (RWAs). We are removing
+                  barriers and enabling individuals across the globe to
+                  participate in a carefully selected collection of valuable
+                  RWAs through cryptocurrency, making crypto-based purchases a
+                  breeze. Xperience Pay guarantees a smooth experience that
+                  emphasizes trust, security, and efficiency.
                 </Typography>
                 <Typography
                   sx={{
@@ -81,9 +83,9 @@ const Header = () => {
                     fontWeight: "600",
                   }}
                 >
-                  Our marketplace allows you to browse and acquire a diverse
-                  range of RWAs, from luxurious real estate and exquisite art to
-                  precious metals and trending collectibles.
+                  Furthermore, the Xperience Pay WEB3 marketplace provides a
+                  wide range of RWAs, including high-end real estate, fine art,
+                  precious metals, and trendy collectibles.
                 </Typography>
               </Box>
             </Box>

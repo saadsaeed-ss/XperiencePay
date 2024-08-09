@@ -9,29 +9,29 @@ const SellersSection = () => {
       isTitle: true,
     },
     {
-      title: "Fast and Secure Transactions",
+      title: "Quick and Safe Transactions",
       description:
-        "Receive near-instantaneous settlements for your RWA sales conducted in XPPUSD, minimizing delays and the risk of chargebacks.",
+        "Get almost instant payments for your RWA sales in XPPUSD, cutting down on wait times and chargeback risks.",
     },
     {
       title: "Transparent Pricing",
       description:
-        "Set clear and predictable prices for your RWAs, leveraging the price stability of XPPUSD to attract buyers.",
+        "Use XPPUSD's stable price to set straightforward, easy-to-understand prices for your RWAs to draw in buyers.",
     },
     {
       title: "Reduced Fees",
       description:
-        "Benefit from lower transaction fees compared to traditional marketplaces, maximizing your profit potential.",
+        "Pay less in transaction fees than on traditional marketplaces, helping you keep more of your profits.",
     },
     {
-      title: "Reach a Global Audience",
+      title: "Connect with Buyers Worldwide",
       description:
-        "Expand your reach and connect with a worldwide network of potential buyers actively seeking to acquire RWAs.",
+        "Grow your customer base and link up with a global network of people keenly looking to buy RWAs.",
     },
     {
       title: "Secure Escrow Services",
       description:
-        "For added security and trust, utilize our optional escrow service to safeguard funds until the buyer fulfills their obligations.",
+        "To boost security, you can opt to use our escrow service to keep funds safe until the buyer fulfills their obligations.",
     },
   ];
 
@@ -87,8 +87,7 @@ const SellersSection = () => {
             }}
           >
             <Typography
-              variant={item.isTitle ? "h4" : "h6"}
-              component={item.isTitle ? "h2" : "h3"}
+              variant={item.isTitle ? "h4" : "h5"}
               sx={{
                 fontSize: item.isTitle ? "36px" : "20px",
                 fontWeight: item.isTitle ? "700" : "600",

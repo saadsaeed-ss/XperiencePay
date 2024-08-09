@@ -38,7 +38,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             sx={{
               fontWeight: "bold",
               mb: 2,
@@ -46,7 +46,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
               fontSize: "1.6rem",
             }}
           >
-            Join the Xperience Pay WEB3 Marketplace Revolution
+            Be Part of the Xperience Pay WEB3 Marketplace
           </Typography>
           <Typography
             variant="body1"
@@ -56,8 +56,8 @@ const XppSec = ({ imageWidth = "100%" }) => {
               fontSize: "16px",
             }}
           >
-            Explore a new chapter in the world of RWAs. Open a world of
-            possibilities and discover the potential of real-world assets.
+            Step into a new era of RWAs. Open doors to fresh opportunities and
+            see the potential of real-world assets.
           </Typography>
 
           <a

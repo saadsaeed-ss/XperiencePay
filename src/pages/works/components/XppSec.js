@@ -42,10 +42,9 @@ const XppSec = ({ imageWidth = "80%" }) => {
               fontSize: "16px",
             }}
           >
-            With Xperience Pay, buying RWAs is a secure, efficient, and
-            empowering experience.
-            <br /> Sign up today and join our global community of buyers and
-            sellers revolutionizing the way we transact real-world assets.
+            Rwas is a safe, efficient, and empowering experience, with Xperience
+            Pay XPP. Join our global community of buyers and sellers, changing
+            the way we deal with tangible assets.
           </Typography>
 
           <Button

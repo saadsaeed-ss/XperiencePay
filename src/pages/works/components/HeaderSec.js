@@ -45,6 +45,7 @@ const Header = () => {
               >
                 <Typography
                   gutterBottom
+                  variant="h2"
                   sx={{
                     fontSize: { xs: "48px", md: "64px" },
                     fontWeight: "bold",
@@ -63,11 +64,10 @@ const Header = () => {
                     maxWidth: { xs: "100%", md: "100%" },
                   }}
                 >
-                  Xperience Pay (XPP) empowers you to effortlessly buy
-                  real-world assets (RWAs) using cryptocurrency. Our
-                  user-friendly WEB3 marketplace streamlines the process,
-                  allowing you to secure your desired asset in just a few simple
-                  steps.
+                  Xperience Pay XPP enables you to purchase real-world assets
+                  RWAs with cryptocurrency. Our simple web3 marketplace allows
+                  you to make crypto-based purchases and quickly get your
+                  desired asset by following our simple steps.
                 </Typography>
               </Box>
             </Box>

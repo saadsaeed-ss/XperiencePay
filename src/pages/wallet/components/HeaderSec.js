@@ -44,6 +44,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -63,15 +64,14 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                The Xperience Pay Wallet (XPP Wallet) is your essential
-                companion for navigating the exciting world of cryptocurrency
-                and real-world assets (RWA) within the Xperience Pay ecosystem.
-                Xperience Pay Wallet is designed with simplicity, security, and
-                convenience in mind. This user-friendly mobile app acts as your
-                secure gateway to holding and managing your XPPUSD stablecoin.
-                It seamlessly integrates with the Xperience Pay WEB3
-                Marketplace, allowing you to effortlessly convert your crypto
-                holdings into XPPUSD for smooth transactions.
+                XPP Wallet is the go-to for those who want to make crypto-based
+                purchases or explore cryptocurrencies and real-world assets
+                (RWAs) within the Xperience Pay ecosystem. The Xperience Pay
+                Wallet is a combination of simplicity, security, and
+                convenience. A simplified user-friendly mobile app that securely
+                lets you store and use your XPPUSD stablecoin. Furthermore, with
+                a simple integration to the Xperience Pay WEB3 Marketplace, you
+                can convert your holdings in XPPUSD effortlessly.
               </Typography>
               <Typography
                 sx={{
@@ -82,11 +82,12 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                The XPP Wallet empowers you to take control of your crypto
-                holdings and interact with decentralized applications (DApps)
-                seamlessly. The XPP Wallet ensures a smooth and efficient
-                experience, making it the go-to solution for users looking to
-                navigate the world of decentralized finance with confidence.
+                The XPP Wallet - The control of your crypto holdings in the palm
+                of your hands with an interface that allows you to interact with
+                any Decentralized Application (DApp). The XPP Wallet offers
+                users an efficient experience with an incredibly smooth user
+                interface - the best option for anyone trying to successfully
+                navigate decentralized finance.
               </Typography>
             </Box>
           </Box>

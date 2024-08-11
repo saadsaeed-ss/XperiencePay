@@ -10,7 +10,7 @@ const FeatureSec = () => {
     {
       title: "Advanced Encryption",
       description:
-        "Your security is our priority. The XPP Wallet employs advanced encryption techniques to safeguard your data and assets. This ensures peace of mind against unauthorized access and malicious attacks.",
+        "We are committed to protecting your data. Therefore, XPP Wallet is designed to protect your data and contents. This gives a sense of security against unauthorized access and malicious attacks.",
       icon: (
         <img
           src={AdvancedEncryptionIcon}
@@ -23,7 +23,7 @@ const FeatureSec = () => {
     {
       title: "Multi-Asset Support",
       description:
-        "From XPPUSD to Bitcoin and Ethereum, the XPP Wallet supports a wide range of cryptocurrencies and digital assets. Manage your diverse portfolio within a single, unified interface, streamlining asset management and enhancing convenience.",
+        "The XPP Wallet supports multiple cryptocurrencies BTC & ETH to EUR, and digital assets. Consolidates all your disparate investments into one place, so you can manage and track everything in the same spot.",
       icon: (
         <img
           src={MultiAssetSupportIcon}
@@ -36,7 +36,7 @@ const FeatureSec = () => {
     {
       title: "Interoperability with DApps",
       description:
-        "Unlock the full potential of decentralized finance (DeFi) with seamless interoperability. The XPP Wallet integrates with various DApps built on the Ethereum blockchain, allowing you to access a myriad of financial services and products directly from your wallet.",
+        "Take full advantage of decentralized finance (Defi) with extensive interoperability. With the XPP Wallet, you can connect with various DApps on the Ethereum blockchain, giving access to various financial services and products right from your wallet.",
       icon: (
         <img
           src={InteroperabilityIcon}
@@ -49,7 +49,7 @@ const FeatureSec = () => {
     {
       title: "Secure Transactions",
       description:
-        "Protect your assets with built-in security features such as two-factor authentication (2FA) and biometric authentication. Our robust security measures ensure that only authorized users can initiate transactions, minimizing the risk of unauthorized access and fraudulent activity.",
+        "Two-factor Authentication (2FA) and Biometric authentication are available to help you keep your assets safe. We have implemented robust security measures, significantly reducing unauthorized transaction initiation risks.",
       icon: (
         <img
           src={SecureTransactionsIcon}
@@ -81,7 +81,6 @@ const FeatureSec = () => {
         >
           <Typography
             variant="h4"
-            component="h2"
             sx={{
               fontSize: "30px",
               fontWeight: "700",
@@ -99,8 +98,8 @@ const FeatureSec = () => {
               marginBottom: "50px",
             }}
           >
-            The XPP Wallet offers a comprehensive suite of features designed to
-            provide a secure and convenient experience.
+            XPP Wallet is a slick wallet offering a wide range of features
+            designed to keep you safe and sound.
           </Typography>
         </Box>
 
@@ -144,8 +143,7 @@ const FeatureSec = () => {
               }}
             >
               <Typography
-                variant="h6"
-                component="h3"
+                variant="h5"
                 sx={{
                   fontSize: "20px",
                   fontWeight: "600",

@@ -38,7 +38,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             sx={{
               fontWeight: "bold",
               mb: 2,
@@ -46,8 +46,8 @@ const JoinSec = ({ imageWidth = "100%" }) => {
               fontSize: "1.6rem",
             }}
           >
-            Join the Xperience Pay revolution and transform the way you manage
-            your cross-border finances today!
+            Get on board with the Xperience Pay movement and revolutionize how
+            you handle your money across borders!
           </Typography>
           <Typography
             sx={{
@@ -56,7 +56,8 @@ const JoinSec = ({ imageWidth = "100%" }) => {
               mb: 4,
             }}
           >
-            Ready to experience the future of cross-border payments?
+            Are you ready to experience the future of cross-border payments and
+            crypto-based purchases?
           </Typography>
           <a
             href="./stablecoin"

@@ -30,6 +30,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -98,6 +99,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -162,6 +164,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -229,6 +232,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -296,6 +300,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -364,6 +369,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -432,6 +438,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -498,6 +505,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",
@@ -561,6 +569,7 @@ const StepsSec = () => {
             }}
           >
             <Typography
+              variant="h2"
               sx={{
                 fontSize: { xs: "24px", md: "32px" },
                 fontWeight: "bold",

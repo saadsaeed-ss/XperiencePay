@@ -38,7 +38,7 @@ const DownloadSec = ({ imageWidth = "100%" }) => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             sx={{
               fontWeight: "bold",
               mb: 2,
@@ -55,9 +55,9 @@ const DownloadSec = ({ imageWidth = "100%" }) => {
               mb: 4,
             }}
           >
-            Take control of your crypto holdings, manage your RWA investments,
-            and experience the future of finance with the Xperience Pay Wallet.
-            Download the app today and unlock a world of possibilities:
+            Own your crypto holdings, manage your RWA investments, and
+            experience the future of finance with a click with Xperience Pay
+            Wallet! Download the app and discover a world of possibilities.
           </Typography>
           <a
             target="_blank"

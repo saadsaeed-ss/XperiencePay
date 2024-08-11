@@ -47,6 +47,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -66,11 +67,10 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                The world is becoming increasingly interconnected, and the need
-                for swift, cost-effective cross-border payments has never been
-                greater. Traditional financial institutions often impose high
-                fees, lengthy processing times, and complex procedures that
-                hinder the seamless flow of funds across borders.
+                The interconnectedness of the world has led to a surge in the
+                demand for efficient and low-cost cross-border payments. Banks
+                often charge a lot, take too long, and make it hard to move
+                money around the globe.
               </Typography>
               <Typography
                 sx={{
@@ -81,13 +81,13 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                Xperience Pay (XPP) disrupts this outdated system by offering a
-                revolutionary solution for cross-border payments using its
-                stablecoin (XPPUSD) and the XPP Wallet. XPP uses its innovative
-                technology to simplify the complexities of international
-                transfers, offering transparent and cost-effective solutions to
-                customers. With a network spanning over 170 countries and a
-                reputation for customer service.
+                Xperience Pay (XPP) shakes up this old system and offers a
+                game-changing solution for cross-border payments through its
+                stablecoin (XPPUSD) and the XPP Wallet. XPP offers transparent
+                and cost-effective solutions to customers, simplifying the
+                hurdles of international transfers. Moreover, XPP works in more
+                than 170 countries and also gives you the facility to make
+                crypto-based purchases.
               </Typography>
             </Box>
           </Box>
@@ -212,9 +212,9 @@ const Header = () => {
                     ml: { xs: 0, md: 10 },
                   }}
                 >
-                  XPP has become a trusted partner for many businesses, helping
-                  them streamline their global payment processes, and accepting
-                  cryptocurrencies.
+                  XPP has become a valuable partner for numerous businesses,
+                  enabling them to accept cryptocurrencies and streamline their
+                  payments worldwide
                 </Typography>
               </Box>
             </Box>

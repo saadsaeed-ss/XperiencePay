@@ -9,7 +9,7 @@ const BenefitSec = () => {
     {
       title: "Faster International Payments",
       description:
-        "Streamline your operations by facilitating rapid cross-border payments to suppliers and partners, improving efficiency and cash flow management.",
+        "Speed up your work by making fast cross-border payments to suppliers and partners, boosting efficiency and helping you manage your cash flow better.",
       icon: (
         <img
           src={internationalPaymentIcon}
@@ -22,7 +22,7 @@ const BenefitSec = () => {
     {
       title: "Reduced Transaction Costs",
       description:
-        "Say goodbye to high fees and hidden charges with our cost-effective payment solution. Keep more of your profits by minimizing transaction expenses associated with traditional banking methods.",
+        "Skip the high fees and hefty charges with our easy-to-use payment system. Hold onto more of your earnings by cutting down on the costs that come with traditional banking.",
       icon: (
         <img
           src={reducedIcon}
@@ -35,7 +35,7 @@ const BenefitSec = () => {
     {
       title: "Expand Your Reach",
       description:
-        "Tap into new markets and reach a broader global audience of customers by offering a convenient and reliable payment option. With XPP, the world is your marketplace.",
+        "Get access to new markets and attract more customers globally by providing them with a secure and effortless payment method. XPP lets you sell to anyone, no matter where they are.",
       icon: (
         <img src={expandIcon} alt="Expand Your Reach" width="64" height="64" />
       ),
@@ -62,7 +62,6 @@ const BenefitSec = () => {
         >
           <Typography
             variant="h4"
-            component="h2"
             sx={{
               fontSize: { xs: "35px", md: "48px" },
               fontWeight: "700",
@@ -115,8 +114,7 @@ const BenefitSec = () => {
               }}
             >
               <Typography
-                variant="h6"
-                component="h3"
+                variant="h5"
                 sx={{
                   fontSize: "20px",
                   fontWeight: "600",

@@ -18,12 +18,28 @@ const CardSec = () => {
         disableGutters
         sx={{
           width: "100%",
-          padding: "3% 10%",
+          padding: "1% 10%",
           color: "#fff",
           fontFamily: '"Manrope", Helvetica',
           marginTop: "100px",
         }}
       >
+        <Typography
+          variant="h4"
+          component="h2"
+          sx={{
+            fontSize: "30px",
+            fontWeight: "700",
+            fontFamily: '"Manrope", Helvetica',
+            color: "#FDC500",
+            marginBottom: "20px",
+            textAlign: "center",
+            marginBottom: "100px",
+          }}
+        >
+          Benefits of XPP Wallet
+        </Typography>
+
         <Box
           sx={{
             display: "flex",
@@ -53,9 +69,9 @@ const CardSec = () => {
                 marginTop: "20px",
               }}
             >
-              Fund your real-world asset purchases directly from your XPP Wallet
-              using XPPUSD or other supported cryptocurrencies. Enjoy smooth and
-              efficient transactions with seamless fund transfers.
+              Use XPP Wallet to buy your real-world assets through XPPUSD or
+              other cryptocurrencies. Experience rapid & easy transactions like
+              never before with hassle-free fund transfers.
             </Typography>
           </Box>
 
@@ -81,10 +97,10 @@ const CardSec = () => {
                 marginTop: "20px",
               }}
             >
-              Top up your XBVBC with XPPUSD from your XPP Wallet and transform
-              your crypto holdings into spendable currency for everyday
-              purchases. Experience the flexibility and convenience of digital
-              assets with global spending capabilities.
+              Top up your XBVBC with XPPUSD from your XPP Wallet and turn your
+              virtual currencies into actual spendable currency for everyday
+              purchases. Take advantage of the flexibility of digital assets
+              with global spending options.
             </Typography>
           </Box>
         </Box>

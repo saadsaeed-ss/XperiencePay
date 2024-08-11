@@ -45,8 +45,8 @@ const JoinSec = ({ imageWidth = "100%" }) => {
               fontSize: "1.6rem",
             }}
           >
-            Join the Xperience Pay revolution and experience a new way to manage
-            your crypto and finances.
+            Join the Xperience Pay revolution and get a new way to manage your
+            crypto and finances and make smooth crypto-based purchases.
           </Typography>
 
           <a

@@ -45,6 +45,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -64,14 +65,13 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                Experience the freedom and flexibility of bridging the gap
-                between your cryptocurrency holdings and everyday spending with
-                the Xperience Pay Prepaid Borderless Visa Business Card. This
-                innovative card empowers you to seamlessly convert your crypto
-                into spendable currency accepted worldwide at any merchant
-                displaying the Visa logo. Our card enables users to spend their
-                digital assets at millions of locations worldwide with the same
-                ease and convenience as traditional fiat currencies.
+                Xperience Pay Prepaid Borderless Visa Business Card allows you
+                to balance your cryptocurrency holdings with your daily
+                expenses. Using this innovative card, with the Visa logo, you
+                can convert your crypto at any merchant into globally spendable
+                cash or digital currency. Our card simplifies the process of
+                transferring digital money at various locations worldwide, much
+                like traditional fiat currencies.
               </Typography>
               <Typography
                 sx={{
@@ -82,8 +82,8 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                US residents can get XBVBC for free, while European or Asian
-                residents will need to pay a small issuance fee. When you spend,
+                XBVBC is free for residents of the US, but a small issuance fee
+                will be charged to those from Europe or Asia. When you spend,
                 you’ll pay a 1.49% liquidation fee, but you can also get up to
                 5% crypto cashback.
               </Typography>

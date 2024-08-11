@@ -39,7 +39,7 @@ const BenefitSec = () => {
     {
       title: "Earn Crypto Rewards in Real-Time",
       description:
-        "Unlike traditional rewards cards, the XPPBVBC rewards you with cryptocurrency instantly as you make purchases. This means you can benefit from any potential price increases in your chosen crypto from the moment you spend. Choose from over 60 popular options, including Bitcoin, Ethereum, and Dogecoin, to customize your rewards strategy.",
+        "XPPBVBC offers cryptocurrency for every purchase made instantly unlike the traditional rewards cards. That means you can benefit from any price hikes in your chosen cryptocurrency right away, from the moment you spend. Choose from over 60 popular options to customize your rewards program, including Bitcoin, Ethereum, and Dogecoin.",
       icon: (
         <img
           src={cryptoRewardsIcon}
@@ -52,7 +52,7 @@ const BenefitSec = () => {
     {
       title: "Uncapped Rewards on Everyday Spending",
       description:
-        "Enjoy an attractive rewards structure with the XPPBVBC. Earn up to 5% back on dining purchases, 3% back on groceries, and 2% back on all other eligible transactions. There's no cap on the amount of rewards you can earn, allowing you to maximize your return on everyday spending.",
+        "Enjoy a great prize program with XPPBVBC. Earn up to 5% back on dining purchases, 3% on groceries, and 2% back on all other eligible transactions. There is no limit to the amount of rewards you can earn, allowing you to maximize your return on everyday spending.",
       icon: (
         <img
           src={uncappedRewardsIcon}
@@ -65,7 +65,7 @@ const BenefitSec = () => {
     {
       title: "Seamless Integration with XPP Wallet",
       description:
-        "The XPPBVBC seamlessly integrates with your Xperience Pay Wallet. As you earn rewards, they are automatically deposited into your XPP account, providing a secure and convenient way to store and manage your growing crypto portfolio.",
+        "XPPBVBC seamlessly integrates with your Xperience Pay Wallet. As you earn rewards, they are automatically deposited into your XPP account, providing a safe and convenient way to store and manage your growing crypto portfolio.",
       icon: (
         <img
           src={walletIntegrationIcon}
@@ -78,7 +78,7 @@ const BenefitSec = () => {
     {
       title: "Instant Card Activation and Use",
       description:
-        "Get started quickly and easily! Once your XPPBVBC application is approved, you can instantly add it to your XPP mobile wallet and begin using it for purchases. No waiting for physical cards to arrive – enjoy the convenience of immediate spending power.",
+        "Get started quickly and easily! Once your XPPBVBC application is approved, you can immediately add it to your XPP mobile wallet and start using it to make purchases. No more waiting for a physical card to arrive – enjoy the convenience of instant spending power.",
       icon: (
         <img
           src={instantActivationIcon}
@@ -91,7 +91,7 @@ const BenefitSec = () => {
     {
       title: "Minimize Capital Gains Impact",
       description:
-        "For users concerned about capital gains taxes, funding your XPPBVBC with XPPUSD offers a strategic advantage. Since XPPUSD is a stablecoin pegged to the US dollar, converting it to fund your card minimizes potential capital gains tax implications compared to using other cryptocurrencies.",
+        "For users worried about capital gains tax, funding your XPPBVBC and XPPUSD offers a strategic advantage. Since XPPUSD is a stablecoin pegged to the U.S. dollar, therefore, converting it to fund your card reduces potential capital gains taxes compared to using other cryptocurrencies.",
       icon: (
         <img
           src={capitalGainsIcon}
@@ -176,8 +176,7 @@ const BenefitSec = () => {
               }}
             >
               <Typography
-                variant="h6"
-                component="h3"
+                variant="h3"
                 sx={{
                   fontSize: item.title ? "16px" : "inherit",
                   fontWeight: item.title ? "600" : "inherit",

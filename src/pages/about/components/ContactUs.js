@@ -151,11 +151,11 @@ const ContactUsSec = () => {
             sx={{
               display: "flex",
               flexDirection: "column",
-              gap: { xs: 1, sm: 4 },
+              gap: { xs: 1, sm: 3 },
             }}
           >
             <Typography
-              variant="h1"
+              variant="h6"
               sx={{
                 fontSize: { xs: "42px", md: "56px" },
               }}
@@ -313,7 +313,14 @@ const ContactUsSec = () => {
             gap: { xs: 2, sm: 4 },
           }}
         >
-          <Typography variant="h2">Follow us on social media!</Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              fontSize: { xs: "32px" },
+            }}
+          >
+            Follow us on social media!
+          </Typography>
           <Box
             sx={{
               display: "flex",

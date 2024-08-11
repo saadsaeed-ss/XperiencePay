@@ -37,8 +37,7 @@ const VisionSection = () => {
         }}
       >
         <Typography
-          variant="h4"
-          component="h2"
+          variant="h2"
           sx={{
             marginBottom: "4%",
             fontSize: "20px",
@@ -55,13 +54,14 @@ const VisionSection = () => {
             fontSize: "18px",
           }}
         >
-          Our vision is to create a borderless financial ecosystem where anyone,
+          Our vision is to create a borderless financial system where anyone,
           anywhere in the world, can access and benefit from a wide range of
-          real-world assets using cryptocurrencies. We envision providing
-          innovative solutions that enable frictionless transactions, promote
-          financial inclusion, and drive economic empowerment. We aim to bridge
-          the gap between the traditional finance world and the dynamism of the
-          crypto market.
+          real-world assets through cryptocurrencies, making crypto-based
+          purchases a breeze. Furthermore, we plan to offer innovative solutions
+          to make transactions smooth, help more people access financial
+          services, and give people more control over their money. We hope to
+          connect the traditional finance world with the fast-changing crypto
+          market.
         </Typography>
       </Box>
     </Container>

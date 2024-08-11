@@ -59,8 +59,7 @@ const TeamSec = () => {
         }}
       >
         <Typography
-          variant="h4"
-          component="h2"
+          variant="h5"
           sx={{
             fontSize: "30px",
             fontWeight: "700",
@@ -78,12 +77,11 @@ const TeamSec = () => {
             marginBottom: "100px",
           }}
         >
-          The success of Xperience Pay (XPP) hinges on the dedication and
-          expertise of our exceptional team. Our dedicated team is comprised of
-          passionate professionals with extensive experience in finance,
-          blockchain technology, and real-world asset markets. We are driven by
-          a shared vision of making the RWA marketplace accessible and secure
-          for everyone.
+          Xperience Pay’s success (XPP) is all about the team's dedication and
+          expertise. Our dedicated team consists of passionate individuals who
+          have expertise in various areas such as finance, blockchain
+          technology, and real-world asset markets. We are driven by a shared
+          vision of making the RWA market accessible and safe for all.
         </Typography>
       </Box>
       <Box

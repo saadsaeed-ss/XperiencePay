@@ -44,6 +44,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -63,13 +64,13 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                Xperience Pay (XPP) is a pioneering WEB3 marketplace built upon
-                the transformative power of blockchain technology. We're on a
-                mission to revolutionize the financial landscape by leveraging
-                the power of blockchain technology and cryptocurrencies.XPP is
-                committed to creating an ecosystem that empowers individuals and
-                businesses to seamlessly transact real-world assets (RWAs) using
-                cryptocurrencies.
+                Xperience Pay (XPP) is a groundbreaking WEB3 marketplace, built
+                on the game-changing potential of blockchain technology,
+                allowing you to make crypto-based purchases without a hassle.
+                XPP aims to shake up the financial world by harnessing the
+                strength of blockchain technology and cryptocurrencies. It also
+                aims to create a platform that allows people and companies to
+                trade real-world assets (RWAs) using digital currencies.
               </Typography>
               <Typography
                 sx={{
@@ -80,9 +81,9 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                We are dedicated to building a trusted and decentralized
-                marketplace where users can confidently buy, sell, and manage
-                real-world assets using our suite of products and services.
+                We're focused on setting up a reliable and decentralized market.
+                So that, users can buy, sell, and handle real-world assets with
+                confidence using our range of products and services.
               </Typography>
             </Box>
           </Box>

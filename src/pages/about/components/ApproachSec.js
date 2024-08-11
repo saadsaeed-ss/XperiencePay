@@ -12,7 +12,7 @@ const ApproachSection = () => {
     {
       title: "Unparalleled Selection of RWAs",
       description:
-        "Explore a diverse range of RWAs meticulously chosen to cater to your specific individual goals. Buy anything from luxurious real estate and exquisite art to precious metals and trending collectibles.",
+        "Check out a range of different RWAs picked to match your needs. XPP provides you with the facility to buy fancy houses, beautiful art, valuable metals, and popular collectibles.",
       icon: (
         <img
           src={UnparallelImg}
@@ -25,7 +25,7 @@ const ApproachSection = () => {
     {
       title: "Secure and Transparent Transactions",
       description:
-        "Our platform leverages the immutability and security of blockchain technology. Smart contracts automate transactions, while escrow services safeguard funds, ensuring a secure and transparent experience for all parties involved.",
+        "Our platform uses blockchain technology to keep things safe and secure. Smart contracts automate transactions, and escrow keeps your money safe so everyone has a secure and transparent experience.",
       icon: (
         <img
           src={TransactionsImg}
@@ -38,7 +38,7 @@ const ApproachSection = () => {
     {
       title: "Global Reach and Opportunity",
       description:
-        "Connect with a network of buyers and sellers spanning the world. XPP breaks down geographical barriers, opening a world of opportunities and maximizing your potential for profitable ventures.",
+        "Get in touch with the buyers and sellers from all over the world. XPP helps you meet people from anywhere giving you more chances to make money.",
       icon: (
         <img
           src={GlobalImg}
@@ -51,19 +51,19 @@ const ApproachSection = () => {
     {
       title: "XPPUSD Stablecoin",
       description:
-        "Conduct transactions with peace of mind using our stablecoin. XPPUSD mitigates the price volatility inherent to cryptocurrencies, offering stability and predictability to your purchases.",
+        "Use XPPUSD Stablecoin to buy things without worry. XPPUSD eliminates the risk of price volatility like other cryptocurrencies, offering stability and predictability to your crypto-based purchases.",
       icon: <img src={CoinImg} alt="Stablecoin" width="64" height="64" />,
     },
     {
       title: "XPP Wallet",
       description:
-        "Store, manage, and securely access your crypto holdings and XPPUSD effortlessly within our user-friendly wallet solution.",
+        "Effortlessly store, manage, and access transport your crypto holdings and XPPUSD with our easy-to-use wallet solution.",
       icon: <img src={walletImg} alt="Wallet" width="64" height="64" />,
     },
     {
       title: "XPP Prepaid Borderless Visa Business Card",
       description:
-        "Effortlessly convert your crypto holdings into spendable currency for everyday purchases anywhere Visa is accepted, maximizing the utility of your crypto assets.",
+        "Convert your crypto holdings into spendable currency for everyday purchases anywhere Visa is accepted, maximizing the utility of your crypto assets.",
       icon: (
         <img
           src={CardImg}
@@ -89,8 +89,7 @@ const ApproachSection = () => {
         }}
       >
         <Typography
-          variant="h4"
-          component="h2"
+          variant="h3"
           sx={{
             fontSize: "30px",
             fontWeight: "700",
@@ -108,8 +107,8 @@ const ApproachSection = () => {
             marginBottom: "100px",
           }}
         >
-          XPP offers a comprehensive ecosystem designed to streamline your
-          journey. Here’s what sets us apart:
+          XPP provides a comprehensive ecosystem that simplifies your
+          experience. Here’s what makes us unique:
         </Typography>
       </Box>
 
@@ -156,8 +155,7 @@ const ApproachSection = () => {
             }}
           >
             <Typography
-              variant="h6"
-              component="h3"
+              variant="h4"
               sx={{
                 fontSize: "20px",
                 fontWeight: "600",

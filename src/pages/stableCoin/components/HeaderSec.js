@@ -44,6 +44,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -63,10 +64,10 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                XPPUSD is our innovative stablecoin designed to provide peace of
-                mind and stability during your RWA purchases. XPPUSD offers
-                users a dependable medium of exchange and a store of value
-                within the Xperience Pay ecosystem.
+                XPPUSD is a stablecoin that guarantees security and confidence
+                while making RWA purchases. XPPUSD serves as a secure medium of
+                exchange within the Xperience Pay ecosystem making your
+                crypto-based purchases more convenient.
               </Typography>
               <Typography
                 sx={{
@@ -77,11 +78,10 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                XPPUSD is both “Fiat-Collateralized” and
-                “Crypto-Collateralized”. It is designed to maintain a fixed
-                value relative to the US dollar and a 2:1 value to
-                cryptocurrencies. This mitigates the risk of unexpected losses
-                due to cryptocurrency volatility.
+                XPPUSD is both 'crypto-collateralized' and 'fiat-collateralized'
+                and has a fixed value against us dollar and a ratio of 2:1 to
+                cryptocurrencies. This lowers the risk of unexpected losses
+                caused by fluctuations in cryptocurrency.
               </Typography>
               <Typography
                 gutterBottom
@@ -92,14 +92,12 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                XPPUSD streamlines the transaction process by automatically
-                converting cryptocurrencies into stablecoin. This eliminates the
-                need for complex currency conversions and users can enjoy a
-                streamlined buying experience. By utilizing XPPUSD you can
-                benefit from lower transaction fees compared to using other
-                cryptocurrencies within the XPP ecosystem. This allows you to
-                keep more of your investment capital where it belongs – working
-                for you.
+                XPPUSD converts cryptocurrencies into stablecoins automatically,
+                making the transaction swift and hassle-free. This eliminates
+                the need for complicated currency conversions and allows users
+                to buy things with ease. XPPUSD has a lot less transaction costs
+                than other cryptocurrencies. That helps you to keep more of your
+                investment capital in the right place at the right time.
               </Typography>
             </Box>
           </Box>

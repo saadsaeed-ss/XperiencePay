@@ -44,6 +44,7 @@ const StandardSec = () => {
             >
               <Typography
                 gutterBottom
+                variant="h2"
                 sx={{
                   fontSize: { xs: "20px", md: "36px" },
                   fontWeight: "bold",
@@ -63,11 +64,11 @@ const StandardSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                XPPUSD is built on the Ethereum network according to ERC-20
-                standards. XPPUSD boasts compatibility with a wide range of
+                XPPUSD is an ERC-20 token designed to be used on the Ethereum
+                network. XPPUSD offers integration with a plethora of
                 decentralized applications (DApps) and cryptocurrency exchanges.
-                This compatibility enhances the liquidity and usability of
-                XPPUSD.
+                This expands the list of tradable pairs for XPPUSD and improves
+                liquidity, making it easier to use.
               </Typography>
               <Typography
                 sx={{
@@ -78,8 +79,8 @@ const StandardSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                This allows users to seamlessly transact and exchange the
-                stablecoin across various platforms.
+                This empowers users to make fast and secure cross-platform
+                stablecoin transactions.
               </Typography>
             </Box>
           </Box>

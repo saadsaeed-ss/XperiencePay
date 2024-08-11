@@ -56,6 +56,7 @@ const AuditRepoSec = () => {
             >
               <Typography
                 gutterBottom
+                variant="h2"
                 sx={{
                   fontSize: { xs: "20px", md: "36px" },
                   fontWeight: "bold",
@@ -75,9 +76,9 @@ const AuditRepoSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                XPP prioritizes user trust and confidence. To achieve this,
-                XPPUSD undergoes regular audits by independent third-party
-                firms.
+                XPP puts the user's trust and confidence as the highest
+                priority. XPPUSD undergoes regular audits by independent
+                third-party firms to ensure this is the case.
               </Typography>
               <Typography
                 sx={{
@@ -88,8 +89,8 @@ const AuditRepoSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                These audits verify the integrity of the reserve system and
-                ensure the continued 1:1 peg of XPPUSD to the US dollar.
+                These audits are used to make sure that the reserve system is
+                fully compliant and ensure XPPUSD remains pegged 1:1 with USD.
               </Typography>
               <Typography
                 gutterBottom
@@ -100,9 +101,8 @@ const AuditRepoSec = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                The results of these audits are made publicly available,
-                fostering transparency and accountability within the Xperience
-                Pay ecosystem.
+                These audit results are public for more transparency and
+                responsibility within the Xperience Pay ecosystem.
               </Typography>
             </Box>
           </Box>

@@ -10,7 +10,7 @@ const BenefitsSec = () => {
     {
       title: "Faster Transactions and Reduced Chargebacks",
       description:
-        "XPPUSD transactions settle near-instantaneously on the blockchain, minimizing delays and the risk of chargebacks associated with traditional payment methods. This ensures you receive your funds quickly and securely upon completion of a sale.",
+        "XPPUSD transactions are settled on the blockchain nearly instantly, resulting in much shorter delays and chargeback risks than conventional payment alternatives. Thereby you get your money quickly and safely when a sale is made.",
       icon: (
         <img
           src={One}
@@ -23,7 +23,7 @@ const BenefitsSec = () => {
     {
       title: "Attract a Global Audience of Buyers",
       description:
-        "XPPUSD eliminates currency conversion hurdles for international buyers. Since its value remains stable and pegged to the US dollar, buyers worldwide can easily participate in purchases without worrying about fluctuating exchange rates. This broadens your buyer pool and increases your chances of securing a sale.",
+        "XPPUSD removes currency conversion barriers for foreign buyers. It retains a stable value and is tied to the US dollar, meaning anyone in the world can purchase without being affected by fluctuating exchange rates. This expands the circle of potential buyers and increases your selling opportunities.",
       icon: (
         <img
           src={Two}
@@ -36,7 +36,7 @@ const BenefitsSec = () => {
     {
       title: "Price Stability and Predictability",
       description:
-        "Unlike traditional cryptocurrencies with fluctuating prices, XPPUSD offers a stable value. This allows you to set clear and predictable prices for your RWAs, attracting buyers who understand the exact value they are investing in.",
+        "Living up to the experience, XPPUSD has a balanced value, unlike other cryptocurrencies that keep fluctuating. It gives you the ability to price your RWAs transparently and predictably, thereby attracting buyers who know exactly what they are getting into.",
       icon: (
         <img
           src={Three}
@@ -49,7 +49,7 @@ const BenefitsSec = () => {
     {
       title: "Faster Settlement Times",
       description:
-        "XPPUSD transactions leverage the efficiency of blockchain technology, facilitating near-instantaneous settlements. This ensures you gain ownership of your purchased RWAs quickly and efficiently.",
+        "Transactions in XPPUSD will be supported by blockchain facilitating near-instantaneous settlements. This guarantees that you can own your bought RWAs fast and securely.",
       icon: (
         <img src={Four} alt="Faster Settlement Times" width="64" height="64" />
       ),
@@ -73,7 +73,6 @@ const BenefitsSec = () => {
         >
           <Typography
             variant="h4"
-            component="h2"
             sx={{
               fontSize: "30px",
               fontWeight: "700",
@@ -91,9 +90,10 @@ const BenefitsSec = () => {
               marginBottom: "100px",
             }}
           >
-            As a seller on the Xperience Pay WEB3 Marketplace, you can leverage
-            the power of XPPUSD to streamline your experience and attract a
-            wider pool of potential buyers. Here's how XPPUSD benefits you:
+            If you are a seller on the Xperience Pay WEB3 Marketplace, then
+            using XPPUSD can help make your user experience simpler and more
+            desirable to buyers looking to make crypto-based purchases. What
+            XPPUSD will do for you:
           </Typography>
         </Box>
 
@@ -112,8 +112,8 @@ const BenefitsSec = () => {
                 padding: "20px",
                 marginBottom: "30px",
                 borderRadius: "8px",
-                border: "1px solid",
-                borderColor: "#333",
+                border: "1px solid #333",
+
                 backgroundColor: "#1c1c1e",
                 color: "#fff",
                 backgroundClip: "padding-box", // Ensures border-radius applies correctly
@@ -140,8 +140,7 @@ const BenefitsSec = () => {
               }}
             >
               <Typography
-                variant="h6"
-                component="h3"
+                variant="h5"
                 sx={{
                   fontSize: "20px",
                   fontWeight: "600",

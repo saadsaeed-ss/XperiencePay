@@ -44,6 +44,7 @@ const Header = () => {
             >
               <Typography
                 gutterBottom
+                variant="h1"
                 sx={{
                   fontSize: { xs: "48px", md: "64px" },
                   fontWeight: "bold",
@@ -62,8 +63,10 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                The Xperience Pay is committed to fostering a secure and
-                reliable environment for all participants.
+                Xperience Pay aims to offer a safe and reliable platform for all
+                participants. We have a list of trusted sellers who are
+                committed to our high standards of quality, integrity, and
+                professionalism.
               </Typography>
               <Typography
                 sx={{
@@ -75,8 +78,10 @@ const Header = () => {
                   fontWeight: "600",
                 }}
               >
-                We have curated a select group of trusted sellers who meet our
-                rigorous standards of quality, integrity, and professionalism.
+                A Trusted Seller promotes transparency in the market. Buyers
+                know that the sellers they are interacting with have gone
+                through a meticulous verification process and can make their
+                crypto-based purchases safely.
               </Typography>
               <Typography
                 sx={{
@@ -86,22 +91,10 @@ const Header = () => {
                   maxWidth: { xs: "100%", md: "100%" },
                 }}
               >
-                Trusted Seller fosters transparency within the marketplace.
-                Buyers can feel confident knowing that the sellers they interact
-                with have gone through a verification process.
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: { sx: "14px", md: "18px" },
-                  lineHeight: "170%",
-                  fontFamily: '"Manrope", Helvetica',
-                  maxWidth: { xs: "100%", md: "100%" },
-                }}
-              >
-                Verification helps us deter individuals with malicious intent
-                from listing fake or illegitimate RWAs. By confirming a seller's
-                identity and basic information, we create a safer marketplace
-                for buyers and minimize the risk of fraudulent transactions. 
+                Our secure verification helps prevent a user from listing fake
+                or illegitimate RWAs. We check the seller's identity and other
+                basic information, so buyers can buy securely, reducing the risk
+                of fraudulent transactions within our marketplace.
               </Typography>
             </Box>
           </Box>

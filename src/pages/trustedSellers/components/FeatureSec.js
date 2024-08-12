@@ -10,7 +10,7 @@ const FeatureSec = () => {
     {
       title: "Verified Credentials",
       description:
-        "Each seller on our platform undergoes a thorough verification process to ensure they meet our stringent criteria for reliability and trustworthiness. We verify their credentials, track record, and reputation to give you peace of mind when making a purchase.",
+        "We make sure every seller we connect with is both a reliable and trustworthy supplier through our stringent verification process. We look at their credentials, track record, and reputation to give you peace of mind when doing crypto-based purchases.",
       icon: (
         <img src={oneImg} alt="Unparalleled Selection" width="64" height="64" />
       ),
@@ -18,7 +18,7 @@ const FeatureSec = () => {
     {
       title: "Secure and Transparent Transactions",
       description:
-        "Our platform leverages the immutability and security of blockchain technology. Smart contracts automate transactions, while escrow services safeguard funds, ensuring a secure and transparent experience for all parties involved.",
+        "Our platform uses blockchain technology to keep things safe and secure. Smart contracts automate transactions, and escrow keeps your money safe so everyone has a secure and transparent experience.",
       icon: (
         <img
           src={twoImg}
@@ -31,7 +31,7 @@ const FeatureSec = () => {
     {
       title: "Global Reach and Opportunity",
       description:
-        "Connect with a network of buyers and sellers spanning the world. XPP breaks down geographical barriers, opening a world of opportunities and maximizing your potential for profitable ventures.",
+        "Get in touch with the buyers and sellers from all over the world. XPP helps you meet people from anywhere giving you more chances to make money.",
       icon: (
         <img
           src={threeImg}
@@ -44,7 +44,7 @@ const FeatureSec = () => {
     {
       title: "XPPUSD Stablecoin",
       description:
-        "Conduct transactions with peace of mind using our stablecoin. XPPUSD mitigates the price volatility inherent to cryptocurrencies, offering stability and predictability to your purchases.",
+        "Use XPPUSD Stablecoin to buy things without worry. XPPUSD eliminates the risk of price volatility like other cryptocurrencies, offering stability and predictability to your crypto-based purchases.",
       icon: <img src={fourImg} alt="Stablecoin" width="64" height="64" />,
     },
   ];
@@ -78,8 +78,7 @@ const FeatureSec = () => {
             }}
           >
             <Typography
-              variant="h6"
-              component="h3"
+              variant="h2"
               sx={{
                 fontSize: "20px",
                 fontWeight: "600",

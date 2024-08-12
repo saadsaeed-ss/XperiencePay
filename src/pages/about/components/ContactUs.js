@@ -116,7 +116,9 @@ const ContactUsSec = () => {
         data
       );
       console.log(res.data);
+      setName("");
       setEmail("");
+      setMessage("");
       setIsSubmitted(true); // Set confirmation message state to true
     } catch (error) {
       console.error(error);

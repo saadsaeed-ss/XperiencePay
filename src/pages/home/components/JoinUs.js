@@ -99,7 +99,7 @@ const SubscriptionSection = () => {
       template_params: {
         from_email: email,
         from_name: "Xperience Pay",
-        to_name: "Chris",
+        to_name: "Xperience Pay",
       },
     };
 

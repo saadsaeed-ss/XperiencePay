@@ -15,7 +15,12 @@ function StableCoin() {
   return (
     <div className="App">
       <Helmet>
-        <meta name="robots" content="noindex" />
+        <title>XPPUSD Stablecoin: Stability and Innovation in One</title>
+        <meta
+          name="description"
+          content="Explore the benefits of XPPUSD Stablecoin, pegged to the US dollar for reliable transactions. Experience the perfect blend of stability & crypto innovation."
+        />
+        <link rel="canonical" href="https://xperiencepay.com/stablecoin" />
       </Helmet>
       <AppAppBar />
       <Header />

@@ -56,7 +56,7 @@ const AuditRepoSec = () => {
             >
               <Typography
                 gutterBottom
-                variant="h2"
+                variant="h3"
                 sx={{
                   fontSize: { xs: "20px", md: "36px" },
                   fontWeight: "bold",

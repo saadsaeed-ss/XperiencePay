@@ -13,7 +13,15 @@ function businessCard() {
   return (
     <div className="App">
       <Helmet>
-        <meta name="robots" content="noindex" />
+        <title>XPP Prepaid Borderless Visa Business Card</title>
+        <meta
+          name="description"
+          content="Enjoy the freedom of global spending with the XPP Prepaid Borderless Visa Business Card. Seamlessly manage your finances and make transactions anywhere."
+        />
+        <link
+          rel="canonical"
+          href="https://xperiencepay.com/borderless-visa-business-card"
+        />
       </Helmet>
       <AppAppBar />
       <Header />

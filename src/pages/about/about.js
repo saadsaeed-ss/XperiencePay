@@ -14,7 +14,12 @@ function AboutPage() {
   return (
     <div className="App">
       <Helmet>
-        <meta name="robots" content="noindex" />
+        <title>Xperience Pay: Revolutionizing Asset Trading with WEB3</title>
+        <meta
+          name="description"
+          content="Learn about Xperience Pay’s mission to transform asset trading through its innovative WEB3 marketplace where we prioritize trust, reliability, and security."
+        />
+        <link rel="canonical" href="https://xperiencepay.com/about-us" />
       </Helmet>
       <AppAppBar />
       <Header />

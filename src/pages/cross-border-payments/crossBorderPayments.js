@@ -14,7 +14,15 @@ function CrossBorderPayments() {
   return (
     <div className="App">
       <Helmet>
-        <meta name="robots" content="noindex" />
+        <title>Cross-Border Payments Made Easy with Xperience Pay</title>
+        <meta
+          name="description"
+          content="Experience hassle-free cross-border payments with Xperience Pay’s WEB3 marketplace. Secure and fast transactions that break down geographical barriers."
+        />
+        <link
+          rel="canonical"
+          href="https://xperiencepay.com/cross-border-payments"
+        />
       </Helmet>
       <AppAppBar />
       <Header />

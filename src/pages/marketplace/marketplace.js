@@ -16,7 +16,12 @@ function Marketplace() {
   return (
     <div className="App">
       <Helmet>
-        <meta name="robots" content="noindex" />
+        <title>Xperience Pay WEB3 Marketplace:</title>
+        <meta
+          name="description"
+          content="XPP offers a secure trading facility through its WEB3 Marketplace. Explore a diverse range of real-world assets (RWAs) using cryptocurrency."
+        />
+        <link rel="canonical" href="https://xperiencepay.com/marketplace" />
       </Helmet>
       <AppAppBar />
       <Header />

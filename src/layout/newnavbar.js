@@ -147,7 +147,7 @@ function AppAppBar() {
               >
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/about-us";
+                    window.location.href = "/about/";
                     handleMenuClose("about");
                   }}
                   sx={{ color: "white" }}
@@ -156,7 +156,7 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/trusted-seller";
+                    window.location.href = "/trusted-sellers/";
                     handleMenuClose("about");
                   }}
                   sx={{ color: "white" }}
@@ -165,7 +165,9 @@ function AppAppBar() {
                 </MenuItem>
               </Menu>
               <MenuItem
-                onClick={(event) => (window.location.href = "/marketplace")}
+                onClick={(event) =>
+                  (window.location.href = "/xpp-marketplace/")
+                }
                 sx={{
                   py: "6px",
                   px: "12px",
@@ -182,7 +184,7 @@ function AppAppBar() {
                 </Typography>
               </MenuItem>
               <MenuItem
-                onClick={(event) => (window.location.href = "/works")}
+                onClick={(event) => (window.location.href = "/how-it-works/")}
                 sx={{ py: "6px", px: "12px" }}
               >
                 <Typography
@@ -231,7 +233,7 @@ function AppAppBar() {
               >
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/stablecoin";
+                    window.location.href = "/xppusd-stablecoin/";
                     handleMenuClose("prodcuts");
                   }}
                   sx={{ color: "white" }}
@@ -240,7 +242,7 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/wallet";
+                    window.location.href = "/xpp-wallet/";
                     handleMenuClose("prodcuts");
                   }}
                   sx={{ color: "white" }}
@@ -249,7 +251,7 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/cross-border-payments";
+                    window.location.href = "/cross-border-payments/";
                     handleMenuClose("products");
                   }}
                   sx={{ color: "white" }}
@@ -258,7 +260,8 @@ function AppAppBar() {
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
-                    window.location.href = "/borderless-visa-business-card";
+                    window.location.href =
+                      "/xpp-prepaid-borderless-visa-business-card/";
                     handleMenuClose("products");
                   }}
                   sx={{ color: "white" }}

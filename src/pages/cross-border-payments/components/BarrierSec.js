@@ -6,7 +6,7 @@ const FeaturesSection = () => {
     <>
       <Box>
         <Typography
-          variant="h4"
+          variant="h2"
           sx={{
             fontSize: "30px",
             fontWeight: "700",

@@ -20,18 +20,18 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about-us" element={<About />} />
-          <Route path="/trusted-seller" element={<TrustedSellerPage />} />
-          <Route path="/works" element={<WorksPage />} />
-          <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/stablecoin" element={<StableCoin />} />
-          <Route path="/wallet" element={<Wallet />} />
+          <Route path="/about/" element={<About />} />
+          <Route path="/trusted-sellers/" element={<TrustedSellerPage />} />
+          <Route path="/how-it-works/" element={<WorksPage />} />
+          <Route path="/xpp-marketplace/" element={<Marketplace />} />
+          <Route path="/xppusd-stablecoin/" element={<StableCoin />} />
+          <Route path="/xpp-wallet/" element={<Wallet />} />
           <Route
-            path="/cross-border-payments"
+            path="/cross-border-payments/"
             element={<CrossBorderPayments />}
           />
           <Route
-            path="/borderless-visa-business-card"
+            path="/xpp-prepaid-borderless-visa-business-card/"
             element={<BusinessCard />}
           />
         </Routes>

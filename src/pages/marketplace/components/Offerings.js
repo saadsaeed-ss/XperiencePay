@@ -169,8 +169,7 @@ const OfferingSec = () => {
             >
               {item.icon}
               <Typography
-                variant="h6"
-                component="h3"
+                component="h4"
                 sx={{
                   fontSize: "20px",
                   fontWeight: "500",

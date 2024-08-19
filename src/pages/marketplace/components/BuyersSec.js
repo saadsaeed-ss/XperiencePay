@@ -88,7 +88,7 @@ const BuyersSection = () => {
             }}
           >
             <Typography
-              variant={item.isTitle ? "h4" : "h5"}
+              variant={item.isTitle ? "h3" : "h4"}
               sx={{
                 fontSize: item.isTitle ? "36px" : "20px",
                 fontWeight: item.isTitle ? "700" : "600",

@@ -38,7 +38,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
           }}
         >
           <Typography
-            variant="h6"
+            variant="h5"
             sx={{
               fontWeight: "bold",
               mb: 2,

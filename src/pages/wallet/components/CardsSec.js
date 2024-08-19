@@ -59,7 +59,7 @@ const CardSec = () => {
               fontFamily: '"Manrope", Helvetica',
             }}
           >
-            <GradientTitle variant="h5">
+            <GradientTitle variant="h3">
               Xperience Pay WEB3 Marketplace
             </GradientTitle>
             <Typography
@@ -87,7 +87,7 @@ const CardSec = () => {
               fontFamily: '"Manrope", Helvetica',
             }}
           >
-            <GradientTitle variant="h5">
+            <GradientTitle variant="h3">
               XPP Borderless Visa Business Card (XBVBC)
             </GradientTitle>
             <Typography

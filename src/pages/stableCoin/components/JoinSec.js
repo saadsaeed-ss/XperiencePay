@@ -38,7 +38,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h6"
             sx={{
               fontWeight: "bold",
               mb: 2,

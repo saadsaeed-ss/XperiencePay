@@ -24,7 +24,7 @@ const XppSec = ({ imageWidth = "80%" }) => {
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6}>
           <Typography
-            variant="h4"
+            variant="h3"
             sx={{
               fontWeight: "bold",
               mb: 2,

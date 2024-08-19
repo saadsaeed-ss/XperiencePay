@@ -45,7 +45,7 @@ const Header = () => {
               >
                 <Typography
                   gutterBottom
-                  variant="h2"
+                  variant="h1"
                   sx={{
                     fontSize: { xs: "48px", md: "64px" },
                     fontWeight: "bold",

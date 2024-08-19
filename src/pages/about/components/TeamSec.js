@@ -135,8 +135,7 @@ const TeamSec = () => {
               }}
             />
             <Typography
-              variant="h6"
-              component="h3"
+              component="h6"
               sx={{
                 fontSize: "20px",
                 fontWeight: "500",

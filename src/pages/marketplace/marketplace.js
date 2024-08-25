@@ -21,7 +21,10 @@ function Marketplace() {
           name="description"
           content="XPP offers a secure trading facility through its WEB3 Marketplace. Explore a diverse range of real-world assets (RWAs) using cryptocurrency."
         />
-        <link rel="canonical" href="https://xperiencepay.com/marketplace" />
+        <link
+          rel="canonical"
+          href="https://xperiencepay.com/xpp-marketplace/"
+        />
       </Helmet>
       <AppAppBar />
       <Header />

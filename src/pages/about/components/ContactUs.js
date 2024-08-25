@@ -355,7 +355,7 @@ const ContactUsSec = () => {
             </Button>
 
             <Button
-              href="https://discord.com/invite/xperiencepayfintech"
+              href="https://discord.gg/3ZxFC77JZf"
               sx={{
                 justifyContent: "flex-start",
                 alignSelf: "stretch",

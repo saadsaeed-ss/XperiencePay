@@ -20,7 +20,7 @@ function TrustedSellerPage() {
           name="description"
           content="Connect with trusted sellers on Xperience Pay’s secure WEB3 marketplace. Browse high-value assets and make confident purchases with our vetted sellers."
         />
-        <link rel="canonical" href="https://xperiencepay.com/trusted-seller" />
+        <link rel="canonical" href="https://xperiencepay.com/trusted-seller/" />
       </Helmet>
       <AppAppBar />
       <Header />

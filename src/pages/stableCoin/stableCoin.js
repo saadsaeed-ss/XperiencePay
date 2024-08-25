@@ -20,7 +20,10 @@ function StableCoin() {
           name="description"
           content="Explore the benefits of XPPUSD Stablecoin, pegged to the US dollar for reliable transactions. Experience the perfect blend of stability & crypto innovation."
         />
-        <link rel="canonical" href="https://xperiencepay.com/stablecoin" />
+        <link
+          rel="canonical"
+          href="https://xperiencepay.com/xppusd-stablecoin/"
+        />
       </Helmet>
       <AppAppBar />
       <Header />

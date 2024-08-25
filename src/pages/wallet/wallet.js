@@ -19,7 +19,7 @@ function Wallet() {
           name="description"
           content="Manage your crypto assets with the XPP Wallet. Enjoy top-notch security and easy access to your funds, making asset trading a breeze on Xperience Pay."
         />
-        <link rel="canonical" href="https://xperiencepay.com/wallet" />
+        <link rel="canonical" href="https://xperiencepay.com/xpp-wallet/" />
       </Helmet>
       <AppAppBar />
       <Header />

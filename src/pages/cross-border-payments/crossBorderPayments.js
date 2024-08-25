@@ -21,7 +21,7 @@ function CrossBorderPayments() {
         />
         <link
           rel="canonical"
-          href="https://xperiencepay.com/cross-border-payments"
+          href="https://xperiencepay.com/cross-border-payments/"
         />
       </Helmet>
       <AppAppBar />

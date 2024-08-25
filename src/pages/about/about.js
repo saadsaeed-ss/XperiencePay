@@ -19,7 +19,7 @@ function AboutPage() {
           name="description"
           content="Learn about Xperience Pay’s mission to transform asset trading through its innovative WEB3 marketplace where we prioritize trust, reliability, and security."
         />
-        <link rel="canonical" href="https://xperiencepay.com/about-us" />
+        <link rel="canonical" href="https://xperiencepay.com/about/" />
       </Helmet>
       <AppAppBar />
       <Header />

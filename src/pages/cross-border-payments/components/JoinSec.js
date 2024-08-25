@@ -60,9 +60,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
             crypto-based purchases?
           </Typography>
           <a
-            href="./stablecoin"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="../xppusd-stablecoin/"
             style={{
               display: "flex",
               alignItems: "center",

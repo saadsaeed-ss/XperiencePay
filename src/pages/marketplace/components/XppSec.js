@@ -61,9 +61,7 @@ const XppSec = ({ imageWidth = "100%" }) => {
           </Typography>
 
           <a
-            href="./about-us"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="../about/"
             style={{
               display: "flex",
               alignItems: "center",

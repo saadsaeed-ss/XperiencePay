@@ -102,7 +102,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="./marketplace"
+              href="../xpp-marketplace/"
             >
               XPP Web 3 Marketplace
             </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="./stablecoin"
+              href="../xppusd-stablecoin/"
             >
               XPP Stablecoin
             </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="./wallet"
+              href="../xpp-wallet/"
             >
               XPP Wallet
             </Link>
@@ -132,7 +132,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="./cross-border-payments"
+              href="../cross-border-payments/"
             >
               Cross-Border Payments
             </Link>
@@ -142,7 +142,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="./borderless-visa-business-card"
+              href="../xpp-prepaid-borderless-visa-business-card/"
             >
               XPP Prepaid Borderless Visa Business Card
             </Link>
@@ -214,7 +214,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="../about/"
             >
               About us
             </Link>
@@ -290,7 +290,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="https://discord.com/invite/xperiencepayfintech"
+              href="https://discord.gg/3ZxFC77JZf"
             >
               Discord
             </Link>
@@ -300,7 +300,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61559603198508"
             >
               Facebook
             </Link>
@@ -310,7 +310,7 @@ export default function Footer() {
                 textDecoration: "none",
                 "&:hover": { color: "hsla(47, 100%, 50%, 1)" },
               }}
-              href="#"
+              href="https://www.instagram.com/xppfintech"
             >
               Instagram
             </Link>

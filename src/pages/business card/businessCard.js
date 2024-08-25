@@ -20,7 +20,7 @@ function businessCard() {
         />
         <link
           rel="canonical"
-          href="https://xperiencepay.com/borderless-visa-business-card"
+          href="https://xperiencepay.com/xpp-prepaid-borderless-visa-business-card/"
         />
       </Helmet>
       <AppAppBar />

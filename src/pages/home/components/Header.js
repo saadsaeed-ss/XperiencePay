@@ -127,7 +127,7 @@ const Header = () => {
             <Box>
               <div style={{ display: "flex", gap: "10px" }}>
                 <Button
-                  href="./about-us"
+                  href="./about/"
                   variant="contained"
                   size="medium"
                   sx={{
@@ -331,7 +331,7 @@ const Header = () => {
                         />
                       </IconButton>
                       <IconButton
-                        href="https://discord.com/invite/xperiencepayfintech"
+                        href="https://discord.gg/3ZxFC77JZf"
                         sx={{
                           color: "#0F1114",
                           padding: "8px",
@@ -373,7 +373,7 @@ const Header = () => {
                     fontSize={{ xs: "14px", md: "20px" }}
                     py={{ xs: "8px", md: "12px" }}
                   >
-                    Community Building: Phase 1
+                    Community Building: Phase 2
                   </Typography>
                   <Box
                     bgcolor="#10100F"
@@ -400,7 +400,7 @@ const Header = () => {
                           "linear-gradient(145deg, rgba(253,197,0,1) 0%, rgba(58,94,252,1) 100%)",
                       }}
                     >
-                      50,000 XPP Token airdrop is Live!
+                      XPP Token airdrop is Live on Galxe!
                     </Typography>
                   </Box>
                   <Box
@@ -421,7 +421,7 @@ const Header = () => {
                       Start completing quests and claiming rewards.
                     </Typography>
                     <Button
-                      href="https://zealy.io/cw/xperiencepay/questboard"
+                      href="https://app.galxe.com/quest/XperiencePay"
                       variant="contained"
                       size="medium"
                       sx={{
@@ -436,7 +436,7 @@ const Header = () => {
                         },
                       }}
                     >
-                      Join Zealy
+                      Join Galxe
                     </Button>
                   </Box>
                 </Box>

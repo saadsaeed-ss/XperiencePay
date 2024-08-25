@@ -50,7 +50,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
           </Typography>
 
           <a
-            href="./marketplace"
+            href="../xpp-marketplace/"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -75,7 +75,7 @@ const JoinSec = ({ imageWidth = "100%" }) => {
             />
           </a>
           <a
-            href="https://zealy.io/cw/xperiencepay/questboard"
+            href="https://app.galxe.com/quest/XperiencePay"
             target="_blank"
             rel="noopener noreferrer"
             style={{

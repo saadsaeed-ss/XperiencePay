@@ -114,7 +114,7 @@ const TokenSection = () => {
         <Box>
           <Stack direction="row" justifyContent="center" spacing={2}>
             <Button
-              href="https://zealy.io/cw/xperiencepay/questboard"
+              href="https://app.galxe.com/quest/XperiencePay"
               variant="contained"
               size="medium"
               sx={{

@@ -295,7 +295,7 @@ const SubscriptionSection = () => {
             </Button>
 
             <Button
-              href="https://discord.com/invite/xperiencepayfintech"
+              href="https://discord.gg/3ZxFC77JZf"
               sx={{
                 justifyContent: "flex-start",
                 alignSelf: "stretch",
@@ -352,7 +352,7 @@ const SubscriptionSection = () => {
             </Button>
 
             <Button
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61559603198508"
               sx={{
                 justifyContent: "flex-start",
                 alignSelf: "stretch",
@@ -375,7 +375,7 @@ const SubscriptionSection = () => {
               Facebook
             </Button>
             <Button
-              href="#"
+              href="https://www.instagram.com/xppfintech"
               sx={{
                 justifyContent: "flex-start",
                 alignSelf: "stretch",

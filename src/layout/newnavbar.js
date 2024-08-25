@@ -292,7 +292,7 @@ function AppAppBar() {
               }}
             >
               <Button
-                href="https://zealy.io/cw/xperiencepay/questboard"
+                href="https://app.galxe.com/quest/XperiencePay"
                 variant="contained"
                 size="medium"
                 sx={{

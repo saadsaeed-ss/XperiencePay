@@ -6,6 +6,7 @@ import Asad from "../../../assets/asad.png";
 import Saad from "../../../assets/saad.jpg";
 import Mahnoor from "../../../assets/mahnoor.png";
 import Mary from "../../../assets/mary.jpg";
+import Leonard from "../../../assets/Leonard Tchuindjo.jpeg";
 
 //
 //
@@ -16,6 +17,12 @@ const teamMembers = [
     role: "Founder and CEO",
     img: Team05,
     linkedin: "https://www.linkedin.com/in/christophe-tapa/",
+  },
+  {
+    name: "Leonard Tchuindjo",
+    role: "Compliance Officer",
+    img: Leonard,
+    linkedin: "https://www.linkedin.com/in/leonard-tchuindjo/",
   },
   {
     name: "Asad Ali Akbar",
